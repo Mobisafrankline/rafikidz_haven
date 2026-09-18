@@ -43,13 +43,13 @@ function PageHero({ tag, title, sub, img }: { tag: string; title: string; sub: s
 function OriginStory() {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#fdf6ee]/50 blur-3xl -z-0 rounded-l-full" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[#fefce8]/50 blur-3xl -z-0 rounded-l-full" />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-start">
           <div>
-            <div className="inline-block bg-[#fdf6ee] text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Our Beginning</div>
+            <div className="inline-block bg-[#fefce8] text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Our Beginning</div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-8 leading-tight">
-              How It All <span className="text-[#c4622d]">Started</span>
+              How It All <span className="text-[#eab308]">Started</span>
             </h2>
             <div className="space-y-5 text-[#6b5c4a] leading-relaxed text-lg font-light">
               <p>
@@ -70,7 +70,7 @@ function OriginStory() {
             </div>
           </div>
           <div className="space-y-6 lg:pt-8">
-            <div className="rounded-[2.5rem] overflow-hidden aspect-video shadow-2xl shadow-[#c4622d]/10 group">
+            <div className="rounded-[2.5rem] overflow-hidden aspect-video shadow-2xl shadow-[#eab308]/10 group">
               <img
                 src="https://images.unsplash.com/photo-1664990594667-9bd4c60cbcfb?w=700&h=400&fit=crop&auto=format"
                 alt="Children in school uniforms"
@@ -107,31 +107,31 @@ function Timeline() {
     { year: '2030+', title: 'The Vision', desc: 'A full private school and polytechnic serving children at the home and in surrounding communities.' },
   ]
   return (
-    <section className="py-32 bg-[#fdf6ee]">
+    <section className="py-32 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="inline-block bg-[#c4622d]/10 text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Our Journey</span>
+          <span className="inline-block bg-[#eab308]/10 text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Our Journey</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610]">18 Years of Faithful Service</h2>
         </div>
         <div className="relative max-w-4xl mx-auto">
-          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#c4622d] via-[#c4622d]/30 to-transparent md:-translate-x-px" />
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#eab308] via-[#eab308]/30 to-transparent md:-translate-x-px" />
           <div className="space-y-10">
             {events.map((e, i) => (
               <div key={e.year} className={`flex gap-6 md:gap-0 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className={`hidden md:flex flex-col md:w-1/2 ${i % 2 === 0 ? 'pr-12 items-end text-right' : 'pl-12 items-start text-left'}`}>
-                  <div className="bg-white rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(196,98,45,0.1)] transition-shadow max-w-xs border border-[#c4622d]/8">
-                    <span className="text-[#c4622d] font-extrabold text-2xl">{e.year}</span>
+                  <div className="bg-white rounded-3xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_20px_40px_rgb(196,98,45,0.1)] transition-shadow max-w-xs border border-[#eab308]/8">
+                    <span className="text-[#eab308] font-extrabold text-2xl">{e.year}</span>
                     <h3 className="font-bold text-[#1e1610] text-lg mt-1 mb-2">{e.title}</h3>
                     <p className="text-[#6b5c4a] text-sm leading-relaxed font-light">{e.desc}</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center z-10 shrink-0">
-                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#c4622d] to-[#e8855a] shadow-lg shadow-[#c4622d]/30 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#eab308] to-[#fde047] shadow-lg shadow-[#eab308]/30 flex items-center justify-center">
                     <div className="w-3 h-3 rounded-full bg-white" />
                   </div>
                 </div>
-                <div className="md:hidden flex-1 bg-white rounded-2xl p-5 shadow-sm border border-[#c4622d]/8">
-                  <span className="text-[#c4622d] font-extrabold">{e.year}</span>
+                <div className="md:hidden flex-1 bg-white rounded-2xl p-5 shadow-sm border border-[#eab308]/8">
+                  <span className="text-[#eab308] font-extrabold">{e.year}</span>
                   <h3 className="font-bold text-[#1e1610] mt-1 mb-2">{e.title}</h3>
                   <p className="text-[#6b5c4a] text-sm leading-relaxed font-light">{e.desc}</p>
                 </div>
@@ -191,17 +191,17 @@ function BoardSection() {
     <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="inline-block bg-[#fdf6ee] text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Leadership</span>
+          <span className="inline-block bg-[#fefce8] text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Leadership</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610]">Board of Directors</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {board.map(b => (
-            <div key={b.name} className="bg-[#fdf6ee] border border-[#c4622d]/8 rounded-3xl p-8 hover:border-[#c4622d]/25 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#c4622d] to-[#e8855a] flex items-center justify-center text-white font-extrabold text-xl mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-[#c4622d]/25">
+            <div key={b.name} className="bg-[#fefce8] border border-[#eab308]/8 rounded-3xl p-8 hover:border-[#eab308]/25 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#eab308] to-[#fde047] flex items-center justify-center text-white font-extrabold text-xl mb-6 group-hover:scale-110 transition-transform shadow-lg shadow-[#eab308]/25">
                 {b.name.split(' ').map((w: string) => w[0]).slice(0, 2).join('')}
               </div>
               <div className="font-extrabold text-[#1e1610] text-lg mb-1">{b.name}</div>
-              <div className="text-[#c4622d] text-xs font-bold uppercase tracking-widest mb-4">{b.role}</div>
+              <div className="text-[#eab308] text-xs font-bold uppercase tracking-widest mb-4">{b.role}</div>
               <p className="text-[#6b5c4a] text-sm leading-relaxed font-light">{b.bio}</p>
             </div>
           ))}
@@ -213,13 +213,13 @@ function BoardSection() {
 
 function LocationSection() {
   return (
-    <section className="py-32 bg-[#fdf6ee]">
+    <section className="py-32 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div>
-            <div className="inline-block bg-white text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">Where We Are</div>
+            <div className="inline-block bg-white text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">Where We Are</div>
             <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-8 leading-tight">
-              Mai-Mahiu,<br /><span className="text-[#c4622d]">Nakuru County</span>
+              Mai-Mahiu,<br /><span className="text-[#eab308]">Nakuru County</span>
             </h2>
             <p className="text-[#6b5c4a] leading-relaxed mb-5 text-lg font-light">
               We are located in Mai-Mahiu — a village approximately 33 miles northwest of Nairobi, in Nakuru County along the Great Rift Valley escarpment. The land is fertile, the air is cool, and the community is tight-knit.
@@ -234,14 +234,14 @@ function LocationSection() {
                 ['🌿', '5 acres — farming, housing & future school land'],
                 ['💧', 'On-site borehole for clean drinking water'],
               ].map(([icon, text]) => (
-                <div key={text as string} className="flex gap-4 items-center bg-white rounded-2xl px-5 py-4 shadow-sm border border-[#c4622d]/6">
+                <div key={text as string} className="flex gap-4 items-center bg-white rounded-2xl px-5 py-4 shadow-sm border border-[#eab308]/6">
                   <span className="text-2xl">{icon}</span>
                   <span className="text-[#6b5c4a] font-medium text-sm">{text}</span>
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-[2.5rem] overflow-hidden aspect-video shadow-2xl shadow-[#c4622d]/15 group">
+          <div className="rounded-[2.5rem] overflow-hidden aspect-video shadow-2xl shadow-[#eab308]/15 group">
             <img
               src="https://images.unsplash.com/photo-1669196741160-8fc1c0ca925b?w=800&h=500&fit=crop&auto=format"
               alt="Kenyan landscape near Nakuru"

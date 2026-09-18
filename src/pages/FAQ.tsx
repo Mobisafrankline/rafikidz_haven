@@ -65,27 +65,27 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#fdf6ee]">
+      <section className="py-16 bg-[#fefce8]">
         <div className="max-w-4xl mx-auto px-6">
           <div className="space-y-12">
             {FAQS.map(group => (
               <div key={group.category}>
-                <h2 className="text-2xl font-bold text-[#c4622d] mb-5" style={{ fontFamily: 'Fraunces, serif' }}>{group.category}</h2>
+                <h2 className="text-2xl font-bold text-[#eab308] mb-5" style={{ fontFamily: 'Fraunces, serif' }}>{group.category}</h2>
                 <div className="space-y-2">
                   {group.items.map(item => {
                     const key = `${group.category}-${item.q}`
                     const isOpen = open === key
                     return (
-                      <div key={key} className={`bg-white border rounded-2xl overflow-hidden transition-all ${isOpen ? 'border-[#c4622d44]' : 'border-[#c4622d0d] hover:border-[#c4622d22]'}`}>
+                      <div key={key} className={`bg-white border rounded-2xl overflow-hidden transition-all ${isOpen ? 'border-[#eab30844]' : 'border-[#eab3080d] hover:border-[#eab30822]'}`}>
                         <button
                           className="w-full flex items-start justify-between gap-4 px-6 py-5 text-left"
                           onClick={() => setOpen(isOpen ? null : key)}
                         >
                           <span className="font-semibold text-[#1e1610] text-sm leading-snug" style={{ fontFamily: 'Fraunces, serif' }}>{item.q}</span>
-                          <span className={`text-[#c4622d] text-lg shrink-0 transition-transform ${isOpen ? 'rotate-45' : ''}`}>+</span>
+                          <span className={`text-[#eab308] text-lg shrink-0 transition-transform ${isOpen ? 'rotate-45' : ''}`}>+</span>
                         </button>
                         {isOpen && (
-                          <div className="px-6 pb-5 border-t border-[#c4622d0d]">
+                          <div className="px-6 pb-5 border-t border-[#eab3080d]">
                             <p className="text-[#6b5c4a] text-sm leading-relaxed pt-4">{item.a}</p>
                           </div>
                         )}
@@ -99,12 +99,12 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#c4622d]">
+      <section className="py-16 bg-[#eab308]">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Fraunces, serif' }}>Didn't Find Your Answer?</h2>
           <p className="text-white/70 mb-6 max-w-md mx-auto">Our team is happy to answer any questions not covered here. Reach out directly.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="bg-white text-[#c4622d] hover:bg-[#fdf6ee] px-8 py-3 rounded-full font-bold transition-colors">Contact Us</Link>
+            <Link to="/contact" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-8 py-3 rounded-full font-bold transition-colors">Contact Us</Link>
             <Link to="/donate" className="border-2 border-white/60 text-white hover:bg-white/10 px-8 py-3 rounded-full font-semibold transition-colors">Donate Now</Link>
           </div>
         </div>

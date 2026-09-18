@@ -37,16 +37,16 @@ function KeyMetrics() {
     { n: '$700/mo', label: 'From USA Supporters', sub: 'two friends giving $350 each' },
   ]
   return (
-    <section className="py-20 bg-[#fdf6ee]">
+    <section className="py-20 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">By the Numbers</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">By the Numbers</span>
           <h2 className="text-4xl font-bold text-[#1e1610] mt-2" style={{ fontFamily: 'Fraunces, serif' }}>The Story Behind the Statistics</h2>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-5">
           {metrics.map(m => (
-            <div key={m.label} className="bg-white border border-[#c4622d0d] rounded-2xl p-6 text-center hover:border-[#c4622d33] transition-colors">
-              <div className="text-3xl font-bold text-[#c4622d]" style={{ fontFamily: 'Fraunces, serif' }}>{m.n}</div>
+            <div key={m.label} className="bg-white border border-[#eab3080d] rounded-2xl p-6 text-center hover:border-[#eab30833] transition-colors">
+              <div className="text-3xl font-bold text-[#eab308]" style={{ fontFamily: 'Fraunces, serif' }}>{m.n}</div>
               <div className="font-semibold text-[#1e1610] text-sm mt-2">{m.label}</div>
               <div className="text-[#8a7968] text-xs mt-1">{m.sub}</div>
             </div>
@@ -82,7 +82,7 @@ function OutcomeStories() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">Success Stories</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Success Stories</span>
           <h2 className="text-4xl font-bold text-[#1e1610] mt-2" style={{ fontFamily: 'Fraunces, serif' }}>Real Outcomes, Real Lives</h2>
         </div>
         <div className="space-y-8">
@@ -91,11 +91,11 @@ function OutcomeStories() {
               <div>
                 <h3 className="text-2xl font-bold text-[#1e1610] mb-4" style={{ fontFamily: 'Fraunces, serif' }}>{o.title}</h3>
                 <p className="text-[#6b5c4a] leading-relaxed mb-5">{o.desc}</p>
-                <div className="bg-[#c4622d0d] border-l-4 border-[#c4622d] rounded-r-xl px-5 py-3">
-                  <p className="text-[#c4622d] font-semibold text-sm">{o.metric}</p>
+                <div className="bg-[#eab3080d] border-l-4 border-[#eab308] rounded-r-xl px-5 py-3">
+                  <p className="text-[#eab308] font-semibold text-sm">{o.metric}</p>
                 </div>
               </div>
-              <div className="rounded-2xl overflow-hidden aspect-video bg-[#c4622d11]">
+              <div className="rounded-2xl overflow-hidden aspect-video bg-[#eab30811]">
                 <img src={o.img} alt={o.title} className="w-full h-full object-cover" />
               </div>
             </div>
@@ -142,10 +142,10 @@ function ContextSection() {
 
 function Accountability() {
   return (
-    <section className="py-20 bg-[#fdf6ee]">
+    <section className="py-20 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">Accountability</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Accountability</span>
           <h2 className="text-4xl font-bold text-[#1e1610] mt-2" style={{ fontFamily: 'Fraunces, serif' }}>How We Stay Accountable</h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -155,7 +155,7 @@ function Accountability() {
             { icon: '📊', title: 'Audited Accounts', desc: 'Financial records are audited and reviewed regularly by the Director of Finance.' },
             { icon: '📬', title: 'Donor Reporting', desc: 'Supporters receive regular updates on how their donations are being used.' },
           ].map(a => (
-            <div key={a.title} className="bg-white border border-[#c4622d0d] rounded-2xl p-6">
+            <div key={a.title} className="bg-white border border-[#eab3080d] rounded-2xl p-6">
               <div className="text-3xl mb-3">{a.icon}</div>
               <h3 className="font-bold text-[#1e1610] mb-2" style={{ fontFamily: 'Fraunces, serif' }}>{a.title}</h3>
               <p className="text-[#6b5c4a] text-sm leading-relaxed">{a.desc}</p>
@@ -177,17 +177,17 @@ function AnnualHighlights() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">Annual Highlights</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Annual Highlights</span>
           <h2 className="text-4xl font-bold text-[#1e1610] mt-2" style={{ fontFamily: 'Fraunces, serif' }}>Recent Years in Review</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {years.map(y => (
-            <div key={y.year} className="border border-[#c4622d11] rounded-2xl p-7">
-              <div className="text-4xl font-bold text-[#c4622d] mb-5" style={{ fontFamily: 'Fraunces, serif' }}>{y.year}</div>
+            <div key={y.year} className="border border-[#eab30811] rounded-2xl p-7">
+              <div className="text-4xl font-bold text-[#eab308] mb-5" style={{ fontFamily: 'Fraunces, serif' }}>{y.year}</div>
               <ul className="space-y-3">
                 {y.highlights.map(h => (
                   <li key={h} className="flex gap-3 text-[#6b5c4a] text-sm">
-                    <span className="text-[#c4622d] font-bold shrink-0">✓</span>
+                    <span className="text-[#eab308] font-bold shrink-0">✓</span>
                     {h}
                   </li>
                 ))}
@@ -202,12 +202,12 @@ function AnnualHighlights() {
 
 function CTASection() {
   return (
-    <section className="py-16 bg-[#c4622d]">
+    <section className="py-16 bg-[#eab308]">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Fraunces, serif' }}>Be Part of the Next 18 Years</h2>
         <p className="text-white/70 mb-8 max-w-lg mx-auto">The impact is real and growing. Your support accelerates everything.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/donate" className="bg-white text-[#c4622d] hover:bg-[#fdf6ee] px-8 py-3 rounded-full font-bold transition-colors">Make a Donation</Link>
+          <Link to="/donate" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-8 py-3 rounded-full font-bold transition-colors">Make a Donation</Link>
           <Link to="/get-involved" className="border-2 border-white/60 text-white hover:bg-white/10 px-8 py-3 rounded-full font-semibold transition-colors">Get Involved</Link>
         </div>
       </div>

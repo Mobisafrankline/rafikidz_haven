@@ -20,7 +20,7 @@ const LEVELS = ['All', 'Primary', 'Secondary', 'Tertiary', 'Alumni', 'Waiting']
 
 const LEVEL_COLORS: Record<string, string> = {
   Primary: 'bg-[#4a8c6022] text-[#2d5a3d]',
-  Secondary: 'bg-[#c4622d11] text-[#c4622d]',
+  Secondary: 'bg-[#eab30811] text-[#eab308]',
   Tertiary: 'bg-[#d4a01711] text-[#8c6500]',
   Alumni: 'bg-[#1e161011] text-[#6b5c4a]',
   Waiting: 'bg-red-50 text-red-600',
@@ -46,14 +46,14 @@ export default function Children() {
         </div>
       </section>
 
-      <section className="py-6 bg-[#fdf6ee] border-b border-[#c4622d11] sticky top-16 z-40">
+      <section className="py-6 bg-[#fefce8] border-b border-[#eab30811] sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap gap-2">
             {LEVELS.map(l => (
               <button
                 key={l}
                 onClick={() => setFilter(l)}
-                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${filter === l ? 'bg-[#c4622d] text-white' : 'bg-white border border-[#c4622d22] text-[#6b5c4a] hover:border-[#c4622d]'}`}
+                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${filter === l ? 'bg-[#eab308] text-white' : 'bg-white border border-[#eab30822] text-[#6b5c4a] hover:border-[#eab308]'}`}
               >
                 {l}
               </button>
@@ -62,12 +62,12 @@ export default function Children() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#fdf6ee]">
+      <section className="py-16 bg-[#fefce8]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map(c => (
-              <div key={c.name} className="bg-white rounded-2xl overflow-hidden border border-[#c4622d0d] hover:shadow-lg transition-all group">
-                <div className="aspect-video overflow-hidden bg-[#c4622d11]">
+              <div key={c.name} className="bg-white rounded-2xl overflow-hidden border border-[#eab3080d] hover:shadow-lg transition-all group">
+                <div className="aspect-video overflow-hidden bg-[#eab30811]">
                   <img src={c.img} alt={c.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
@@ -84,14 +84,14 @@ export default function Children() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#c4622d]">
+      <section className="py-20 bg-[#eab308]">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-5" style={{ fontFamily: 'Fraunces, serif' }}>There Are Dozens More Who Need Us</h2>
           <p className="text-white/75 max-w-xl mx-auto mb-8 leading-relaxed">
             Siblings of current children are suffering. Neighboring villages have desperate cases. Our waiting list grows every month. Your donation expands our capacity to say "yes."
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/donate" className="bg-white text-[#c4622d] hover:bg-[#fdf6ee] px-8 py-3 rounded-full font-bold transition-colors">Sponsor a Child</Link>
+            <Link to="/donate" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-8 py-3 rounded-full font-bold transition-colors">Sponsor a Child</Link>
             <Link to="/get-involved" className="border-2 border-white/60 text-white hover:bg-white/10 px-8 py-3 rounded-full font-semibold transition-colors">Other Ways to Help</Link>
           </div>
         </div>

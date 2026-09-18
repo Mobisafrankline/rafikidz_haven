@@ -27,10 +27,10 @@ export default function Vision() {
 
 function MissionStatement() {
   return (
-    <section className="py-20 bg-[#fdf6ee]">
+    <section className="py-20 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">Our North Star</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Our North Star</span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1e1610] mt-3 mb-8 leading-tight" style={{ fontFamily: 'Fraunces, serif' }}>
             To see every child grow into a responsible, disciplined, and confident adult — equipped to build a life anywhere in the world.
           </h2>
@@ -49,9 +49,9 @@ function RoadmapSection() {
       phase: 'Phase 1',
       title: 'Immediate Priorities',
       timeline: 'Now — 2026',
-      color: 'bg-[#c4622d]',
-      textColor: 'text-[#c4622d]',
-      borderColor: 'border-[#c4622d]',
+      color: 'bg-[#eab308]',
+      textColor: 'text-[#eab308]',
+      borderColor: 'border-[#eab308]',
       goals: [
         { goal: 'Install water pump and piped running water', cost: '$2,500', status: 'Unfunded' },
         { goal: 'Build perimeter fence and install security gate', cost: '$4,000', status: 'Unfunded' },
@@ -107,7 +107,7 @@ function RoadmapSection() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-14">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">The Roadmap</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">The Roadmap</span>
           <h2 className="text-4xl font-bold text-[#1e1610] mt-2" style={{ fontFamily: 'Fraunces, serif' }}>Three Phases, One Direction</h2>
         </div>
         <div className="space-y-8">
@@ -123,7 +123,7 @@ function RoadmapSection() {
               <div className="p-6">
                 <div className="grid sm:grid-cols-2 gap-3">
                   {p.goals.map(g => (
-                    <div key={g.goal} className="flex items-start justify-between gap-4 bg-[#fdf6ee] rounded-xl px-5 py-3">
+                    <div key={g.goal} className="flex items-start justify-between gap-4 bg-[#fefce8] rounded-xl px-5 py-3">
                       <span className="text-[#6b5c4a] text-sm">{g.goal}</span>
                       <div className="flex flex-col items-end gap-1 shrink-0">
                         <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${STATUS_COLORS[g.status]}`}>{g.status}</span>
@@ -179,25 +179,25 @@ function FundingGoals() {
     { label: 'Phase 3: Polytechnic & Expansion', target: '$130,000+', raised: 2, description: 'Vocational college and branch homes' },
   ]
   return (
-    <section className="py-20 bg-[#fdf6ee]">
+    <section className="py-20 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-12">
-          <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">Funding Progress</span>
+          <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Funding Progress</span>
           <h2 className="text-4xl font-bold text-[#1e1610] mt-2" style={{ fontFamily: 'Fraunces, serif' }}>Where We Stand</h2>
           <p className="text-[#6b5c4a] mt-2 max-w-lg">Our capital goals by phase. Monthly operational costs are separate and ongoing.</p>
         </div>
         <div className="space-y-6 max-w-3xl">
           {goals.map(g => (
-            <div key={g.label} className="bg-white border border-[#c4622d0d] rounded-2xl p-7">
+            <div key={g.label} className="bg-white border border-[#eab3080d] rounded-2xl p-7">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
                 <div>
                   <h3 className="font-bold text-[#1e1610]" style={{ fontFamily: 'Fraunces, serif' }}>{g.label}</h3>
                   <p className="text-[#8a7968] text-sm mt-0.5">{g.description}</p>
                 </div>
-                <span className="text-[#c4622d] font-bold text-xl shrink-0" style={{ fontFamily: 'Fraunces, serif' }}>{g.target}</span>
+                <span className="text-[#eab308] font-bold text-xl shrink-0" style={{ fontFamily: 'Fraunces, serif' }}>{g.target}</span>
               </div>
-              <div className="h-3 bg-[#c4622d0d] rounded-full overflow-hidden">
-                <div className="h-full bg-[#c4622d] rounded-full transition-all" style={{ width: `${g.raised}%` }} />
+              <div className="h-3 bg-[#eab3080d] rounded-full overflow-hidden">
+                <div className="h-full bg-[#eab308] rounded-full transition-all" style={{ width: `${g.raised}%` }} />
               </div>
               <div className="flex justify-between text-xs text-[#8a7968] mt-2">
                 <span>{g.raised}% funded</span>
@@ -216,7 +216,7 @@ function SustainabilitySection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="rounded-3xl overflow-hidden aspect-video bg-[#c4622d11]">
+          <div className="rounded-3xl overflow-hidden aspect-video bg-[#eab30811]">
             <img
               src="https://images.unsplash.com/photo-1746401809231-4c1ad2c1e161?w=700&h=500&fit=crop&auto=format"
               alt="Sustainable farming"
@@ -224,7 +224,7 @@ function SustainabilitySection() {
             />
           </div>
           <div>
-            <span className="text-[#c4622d] text-xs font-bold uppercase tracking-widest">Sustainability</span>
+            <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Sustainability</span>
             <h2 className="text-4xl font-bold text-[#1e1610] mt-3 mb-6" style={{ fontFamily: 'Fraunces, serif' }}>Building Self-Sufficiency</h2>
             <p className="text-[#6b5c4a] leading-relaxed mb-5">
               Lemalah is not designed to be permanently dependent on donations. Our long-term sustainability strategy involves becoming partially self-funding through:
@@ -254,7 +254,7 @@ function SustainabilitySection() {
 
 function CallToAction() {
   return (
-    <section className="py-20 bg-[#c4622d]">
+    <section className="py-20 bg-[#eab308]">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'Fraunces, serif' }}>
           This Vision Needs Your Partnership
@@ -263,7 +263,7 @@ function CallToAction() {
           We are not asking for charity. We are inviting you into a long-term investment in children who will go on to change Kenya — and possibly the world.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link to="/donate" className="bg-white text-[#c4622d] hover:bg-[#fdf6ee] px-10 py-4 rounded-full font-bold text-base transition-colors">Fund a Phase →</Link>
+          <Link to="/donate" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-10 py-4 rounded-full font-bold text-base transition-colors">Fund a Phase →</Link>
           <Link to="/contact" className="border-2 border-white/60 text-white hover:bg-white/10 px-10 py-4 rounded-full font-semibold text-base transition-colors">Discuss Partnership</Link>
         </div>
       </div>

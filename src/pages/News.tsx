@@ -80,12 +80,12 @@ export default function News() {
         </div>
       </section>
 
-      <section className="py-6 bg-[#fdf6ee] border-b border-[#c4622d11] sticky top-16 z-40">
+      <section className="py-6 bg-[#fefce8] border-b border-[#eab30811] sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap gap-2">
             {TAGS.map(t => (
               <button key={t} onClick={() => setActiveTag(t)}
-                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${activeTag === t ? 'bg-[#c4622d] text-white' : 'bg-white border border-[#c4622d22] text-[#6b5c4a] hover:border-[#c4622d]'}`}>
+                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${activeTag === t ? 'bg-[#eab308] text-white' : 'bg-white border border-[#eab30822] text-[#6b5c4a] hover:border-[#eab308]'}`}>
                 {t}
               </button>
             ))}
@@ -93,17 +93,17 @@ export default function News() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#fdf6ee]">
+      <section className="py-16 bg-[#fefce8]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map(a => (
-              <div key={a.id} className="bg-white border border-[#c4622d0d] rounded-2xl overflow-hidden hover:shadow-lg transition-all group">
-                <div className="aspect-video overflow-hidden bg-[#c4622d11]">
+              <div key={a.id} className="bg-white border border-[#eab3080d] rounded-2xl overflow-hidden hover:shadow-lg transition-all group">
+                <div className="aspect-video overflow-hidden bg-[#eab30811]">
                   <img src={a.img} alt={a.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="bg-[#c4622d11] text-[#c4622d] text-xs font-bold px-2.5 py-1 rounded-full">{a.tag}</span>
+                    <span className="bg-[#eab30811] text-[#eab308] text-xs font-bold px-2.5 py-1 rounded-full">{a.tag}</span>
                     <span className="text-[#8a7968] text-xs">{a.date}</span>
                   </div>
                   <h3 className="font-bold text-[#1e1610] text-base mb-3 leading-snug" style={{ fontFamily: 'Fraunces, serif' }}>{a.title}</h3>
@@ -111,7 +111,7 @@ export default function News() {
                     {expanded === a.id ? a.body : a.excerpt}
                   </p>
                   <button onClick={() => setExpanded(expanded === a.id ? null : a.id)}
-                    className="text-[#c4622d] text-sm font-semibold hover:underline">
+                    className="text-[#eab308] text-sm font-semibold hover:underline">
                     {expanded === a.id ? '← Show less' : 'Read full story →'}
                   </button>
                 </div>
@@ -121,7 +121,7 @@ export default function News() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#c4622d]">
+      <section className="py-16 bg-[#eab308]">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Fraunces, serif' }}>Stay Connected</h2>
           <p className="text-white/70 mb-6 max-w-md mx-auto">Get news and updates from the home delivered to your inbox.</p>

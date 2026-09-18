@@ -15,7 +15,7 @@ export default function Programs() {
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Programs & Services</span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-3xl leading-tight mb-6">
-            Holistic Care for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#c4622d]">Whole Lives</span>
+            Holistic Care for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">Whole Lives</span>
           </h1>
           <p className="text-white/70 text-xl font-light max-w-xl">We don't just keep children alive. We equip them to thrive.</p>
         </div>
@@ -41,13 +41,13 @@ function ProgramSection({ id, tag, title, desc, details, img, reverse = false, d
       <div className="max-w-7xl mx-auto px-6">
         <div className={`grid lg:grid-cols-2 gap-20 items-center ${reverse ? 'lg:[&>*:first-child]:order-2' : ''}`}>
           <div>
-            <div className={`inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 ${dark ? 'bg-white/10 text-[#f0c94a] border border-white/15' : 'bg-[#fdf6ee] text-[#c4622d]'}`}>{tag}</div>
+            <div className={`inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 ${dark ? 'bg-white/10 text-[#f0c94a] border border-white/15' : 'bg-[#fefce8] text-[#eab308]'}`}>{tag}</div>
             <h2 className={`text-4xl md:text-5xl font-extrabold mb-8 leading-tight ${dark ? 'text-white' : 'text-[#1e1610]'}`}>{title}</h2>
             <p className={`leading-relaxed mb-8 text-lg font-light ${dark ? 'text-white/70' : 'text-[#6b5c4a]'}`}>{desc}</p>
             <ul className="space-y-4">
               {details.map(d => (
                 <li key={d} className={`flex gap-4 items-start ${dark ? 'text-white/70' : 'text-[#6b5c4a]'}`}>
-                  <span className="w-6 h-6 rounded-full bg-gradient-to-br from-[#c4622d] to-[#e8855a] flex items-center justify-center text-white text-xs shrink-0 mt-0.5 shadow-md">→</span>
+                  <span className="w-6 h-6 rounded-full bg-gradient-to-br from-[#eab308] to-[#fde047] flex items-center justify-center text-white text-xs shrink-0 mt-0.5 shadow-md">→</span>
                   <span className="text-sm leading-relaxed font-light">{d}</span>
                 </li>
               ))}
@@ -214,13 +214,13 @@ function FuturePrograms() {
 
 function CTA() {
   return (
-    <section className="py-24 bg-gradient-to-br from-[#c4622d] to-[#8c3d14] relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-[#eab308] to-[#ca8a04] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 blur-[80px] rounded-full" />
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Your Gift Powers These Programs</h2>
         <p className="text-white/80 mb-12 max-w-xl mx-auto text-xl font-light">Food, school, shelter, healthcare — none of it happens without funding. Every dollar directly supports a child in our care.</p>
         <div className="flex flex-wrap justify-center gap-5">
-          <Link to="/donate" className="bg-white text-[#c4622d] hover:bg-[#fdf6ee] px-10 py-4 rounded-full font-extrabold text-lg transition-all hover:scale-105 shadow-xl">Donate Now</Link>
+          <Link to="/donate" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-10 py-4 rounded-full font-extrabold text-lg transition-all hover:scale-105 shadow-xl">Donate Now</Link>
           <Link to="/vision" className="glass hover:bg-white/20 text-white px-10 py-4 rounded-full font-bold text-lg transition-all">Our Vision →</Link>
         </div>
       </div>

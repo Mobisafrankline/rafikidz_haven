@@ -39,7 +39,7 @@ export default function Donate() {
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
             Your Gift Changes a<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#c4622d]">Child's World</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">Child's World</span>
           </h1>
           <p className="text-white/70 text-xl font-light max-w-xl">
             52 children rely on the generosity of people like you for food, shelter, and a future.
@@ -53,9 +53,9 @@ export default function Donate() {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Left: Info */}
             <div>
-              <div className="inline-block bg-[#fdf6ee] text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Transparent Impact</div>
+              <div className="inline-block bg-[#fefce8] text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Transparent Impact</div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e1610] mb-6 leading-tight">
-                Every Dollar Goes <span className="text-[#c4622d]">Directly</span> to the Children
+                Every Dollar Goes <span className="text-[#eab308]">Directly</span> to the Children
               </h2>
               <p className="text-[#6b5c4a] text-lg leading-relaxed mb-10 font-light">
                 No wasteful overhead. 100% of your donation reaches the children on our doorstep and waiting list.
@@ -65,10 +65,10 @@ export default function Donate() {
                 {AMOUNTS.map(a => (
                   <div
                     key={a}
-                    className={`flex gap-5 items-center p-6 rounded-3xl border-2 cursor-pointer transition-all hover:-translate-y-0.5 ${selected === a && !custom ? 'border-[#c4622d] bg-[#c4622d]/5 shadow-lg shadow-[#c4622d]/10' : 'border-[#c4622d]/10 bg-[#fdf6ee] hover:border-[#c4622d]/30'}`}
+                    className={`flex gap-5 items-center p-6 rounded-3xl border-2 cursor-pointer transition-all hover:-translate-y-0.5 ${selected === a && !custom ? 'border-[#eab308] bg-[#eab308]/5 shadow-lg shadow-[#eab308]/10' : 'border-[#eab308]/10 bg-[#fefce8] hover:border-[#eab308]/30'}`}
                     onClick={() => { setSelected(a); setCustom('') }}
                   >
-                    <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${selected === a && !custom ? 'border-[#c4622d] bg-[#c4622d]' : 'border-[#c4622d]/30'}`}>
+                    <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 transition-colors ${selected === a && !custom ? 'border-[#eab308] bg-[#eab308]' : 'border-[#eab308]/30'}`}>
                       {selected === a && !custom && <div className="w-2.5 h-2.5 rounded-full bg-white" />}
                     </div>
                     <div className="flex-1">
@@ -76,18 +76,18 @@ export default function Donate() {
                       <div className="text-[#6b5c4a] text-sm mt-0.5 font-light">{AMOUNT_LABELS[a]}</div>
                     </div>
                     {selected === a && !custom && (
-                      <div className="w-8 h-8 rounded-full bg-[#c4622d] flex items-center justify-center text-white text-sm">✓</div>
+                      <div className="w-8 h-8 rounded-full bg-[#eab308] flex items-center justify-center text-white text-sm">✓</div>
                     )}
                   </div>
                 ))}
               </div>
 
               {/* Fund breakdown */}
-              <div className="bg-[#fdf6ee] rounded-3xl p-8 border border-[#c4622d]/8">
+              <div className="bg-[#fefce8] rounded-3xl p-8 border border-[#eab308]/8">
                 <h3 className="font-extrabold text-[#1e1610] text-xl mb-6">How Your Money is Used</h3>
                 <div className="space-y-5">
                   {[
-                    { label: 'Food & Nutrition', pct: 40, color: 'from-[#c4622d] to-[#e8855a]' },
+                    { label: 'Food & Nutrition', pct: 40, color: 'from-[#eab308] to-[#fde047]' },
                     { label: 'Education & Fees', pct: 30, color: 'from-[#2d5a3d] to-[#4a8c60]' },
                     { label: 'Healthcare & Hygiene', pct: 20, color: 'from-[#d4a017] to-[#f0c94a]' },
                     { label: 'Shelter & Utilities', pct: 10, color: 'from-[#8a7968] to-[#b0a090]' },
@@ -97,7 +97,7 @@ export default function Donate() {
                         <span className="font-semibold text-[#6b5c4a]">{b.label}</span>
                         <span className="font-extrabold text-[#1e1610]">{b.pct}%</span>
                       </div>
-                      <div className="h-3 bg-[#c4622d]/8 rounded-full overflow-hidden">
+                      <div className="h-3 bg-[#eab308]/8 rounded-full overflow-hidden">
                         <div className={`h-full bg-gradient-to-r ${b.color} rounded-full transition-all`} style={{ width: `${b.pct}%` }} />
                       </div>
                     </div>
@@ -120,14 +120,14 @@ export default function Donate() {
                   </Link>
                 </div>
               ) : (
-                <div className="bg-white rounded-[2.5rem] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.1)] border border-[#c4622d]/8">
+                <div className="bg-white rounded-[2.5rem] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.1)] border border-[#eab308]/8">
                   {step === 1 && (
                     <>
                       <h2 className="text-2xl font-extrabold text-[#1e1610] mb-6">Your Donation</h2>
-                      <div className="flex gap-2 bg-[#fdf6ee] rounded-full p-1.5 mb-8">
+                      <div className="flex gap-2 bg-[#fefce8] rounded-full p-1.5 mb-8">
                         {(['monthly', 'once'] as const).map(f => (
                           <button key={f} onClick={() => setFreq(f)}
-                            className={`flex-1 py-3 rounded-full text-sm font-bold transition-all ${freq === f ? 'bg-gradient-to-r from-[#c4622d] to-[#e8855a] text-white shadow-lg' : 'text-[#6b5c4a] hover:text-[#c4622d]'}`}>
+                            className={`flex-1 py-3 rounded-full text-sm font-bold transition-all ${freq === f ? 'bg-gradient-to-r from-[#eab308] to-[#fde047] text-white shadow-lg' : 'text-[#6b5c4a] hover:text-[#eab308]'}`}>
                             {f === 'monthly' ? '♻ Monthly' : '⚡ One-time'}
                           </button>
                         ))}
@@ -136,7 +136,7 @@ export default function Donate() {
                       <div className="grid grid-cols-3 gap-3 mb-5">
                         {AMOUNTS.map(a => (
                           <button key={a} onClick={() => { setSelected(a); setCustom('') }}
-                            className={`py-4 rounded-2xl font-extrabold text-lg transition-all hover:scale-105 ${selected === a && !custom ? 'bg-gradient-to-br from-[#c4622d] to-[#e8855a] text-white shadow-lg shadow-[#c4622d]/25' : 'bg-[#fdf6ee] text-[#c4622d] hover:bg-[#c4622d]/10'}`}>
+                            className={`py-4 rounded-2xl font-extrabold text-lg transition-all hover:scale-105 ${selected === a && !custom ? 'bg-gradient-to-br from-[#eab308] to-[#fde047] text-white shadow-lg shadow-[#eab308]/25' : 'bg-[#fefce8] text-[#eab308] hover:bg-[#eab308]/10'}`}>
                             ${a}
                           </button>
                         ))}
@@ -146,17 +146,17 @@ export default function Donate() {
                         placeholder="Custom amount ($)"
                         value={custom}
                         onChange={e => { setCustom(e.target.value); setSelected(0) }}
-                        className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-5 py-4 text-[#1e1610] placeholder-[#8a7968] focus:outline-none focus:border-[#c4622d] mb-6 font-medium"
+                        className="w-full border-2 border-[#eab308]/15 rounded-2xl px-5 py-4 text-[#1e1610] placeholder-[#8a7968] focus:outline-none focus:border-[#eab308] mb-6 font-medium"
                       />
                       {amount > 0 && (
-                        <div className="bg-[#c4622d]/8 border border-[#c4622d]/15 rounded-2xl p-4 mb-6 text-sm">
-                          <span className="font-extrabold text-[#c4622d]">${amount}{freq === 'monthly' ? '/month' : ' one-time'}</span>
+                        <div className="bg-[#eab308]/8 border border-[#eab308]/15 rounded-2xl p-4 mb-6 text-sm">
+                          <span className="font-extrabold text-[#eab308]">${amount}{freq === 'monthly' ? '/month' : ' one-time'}</span>
                           <span className="text-[#6b5c4a] ml-2 font-light">— {AMOUNT_LABELS[amount] || 'every dollar goes directly to the children'}</span>
                         </div>
                       )}
                       <button
                         onClick={() => amount > 0 && setStep(2)}
-                        className="w-full bg-gradient-to-r from-[#c4622d] to-[#e8855a] hover:from-[#8c3d14] hover:to-[#c4622d] text-white font-extrabold py-5 rounded-2xl transition-all text-lg disabled:opacity-40 hover:scale-[1.02] shadow-xl shadow-[#c4622d]/25"
+                        className="w-full bg-gradient-to-r from-[#eab308] to-[#fde047] hover:from-[#ca8a04] hover:to-[#eab308] text-white font-extrabold py-5 rounded-2xl transition-all text-lg disabled:opacity-40 hover:scale-[1.02] shadow-xl shadow-[#eab308]/25"
                         disabled={amount <= 0}
                       >
                         Continue →
@@ -166,26 +166,26 @@ export default function Donate() {
                   {step === 2 && (
                     <>
                       <div className="flex items-center gap-3 mb-6">
-                        <button onClick={() => setStep(1)} className="text-[#8a7968] hover:text-[#c4622d] transition-colors font-medium text-sm">← Back</button>
+                        <button onClick={() => setStep(1)} className="text-[#8a7968] hover:text-[#eab308] transition-colors font-medium text-sm">← Back</button>
                         <h2 className="text-xl font-extrabold text-[#1e1610]">Your Details</h2>
                       </div>
-                      <div className="bg-[#fdf6ee] border border-[#c4622d]/15 rounded-2xl p-4 mb-6">
-                        <span className="font-extrabold text-[#c4622d] text-lg">${amount}{freq === 'monthly' ? '/month' : ' one-time'}</span>
+                      <div className="bg-[#fefce8] border border-[#eab308]/15 rounded-2xl p-4 mb-6">
+                        <span className="font-extrabold text-[#eab308] text-lg">${amount}{freq === 'monthly' ? '/month' : ' one-time'}</span>
                         <span className="text-[#8a7968] ml-2 text-sm">— {freq === 'monthly' ? 'recurring monthly' : 'single gift'}</span>
                       </div>
                       <form className="space-y-4" onSubmit={e => { e.preventDefault(); setSubmitted(true) }}>
                         <div className="grid grid-cols-2 gap-3">
-                          <input required type="text" placeholder="First name" className="border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                          <input required type="text" placeholder="Last name" className="border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                          <input required type="text" placeholder="First name" className="border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                          <input required type="text" placeholder="Last name" className="border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                         </div>
-                        <input required type="email" placeholder="Email address" className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                        <input type="text" placeholder="Country" className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                        <input required type="text" placeholder="Card number" className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                        <input required type="email" placeholder="Email address" className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                        <input type="text" placeholder="Country" className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                        <input required type="text" placeholder="Card number" className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                         <div className="grid grid-cols-2 gap-3">
-                          <input type="text" placeholder="MM / YY" className="border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                          <input type="text" placeholder="CVC" className="border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                          <input type="text" placeholder="MM / YY" className="border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                          <input type="text" placeholder="CVC" className="border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                         </div>
-                        <button type="submit" className="w-full bg-gradient-to-r from-[#c4622d] to-[#e8855a] hover:from-[#8c3d14] hover:to-[#c4622d] text-white font-extrabold py-5 rounded-2xl transition-all text-lg hover:scale-[1.02] shadow-xl shadow-[#c4622d]/25">
+                        <button type="submit" className="w-full bg-gradient-to-r from-[#eab308] to-[#fde047] hover:from-[#ca8a04] hover:to-[#eab308] text-white font-extrabold py-5 rounded-2xl transition-all text-lg hover:scale-[1.02] shadow-xl shadow-[#eab308]/25">
                           Donate ${amount}{freq === 'monthly' ? '/month' : ''}
                         </button>
                         <p className="text-[#8a7968] text-xs text-center font-medium">
@@ -202,10 +202,10 @@ export default function Donate() {
       </section>
 
       {/* Other Ways */}
-      <section className="py-20 bg-[#fdf6ee]">
+      <section className="py-20 bg-[#fefce8]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
-            <span className="inline-block bg-white text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5 shadow-sm">More Options</span>
+            <span className="inline-block bg-white text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5 shadow-sm">More Options</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e1610]">Other Ways to Give</h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
@@ -214,11 +214,11 @@ export default function Donate() {
               { icon: '📦', title: 'In-Kind Donations', desc: 'Clothing, food, school supplies, and household goods are always welcome.', link: '/get-involved' },
               { icon: '📢', title: 'Fundraise for Us', desc: 'Run a birthday campaign or community event and donate the proceeds.', link: '/get-involved' },
             ].map(w => (
-              <Link key={w.title} to={w.link} className="bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group border border-[#c4622d]/8 hover:border-[#c4622d]/25">
-                <div className="w-14 h-14 rounded-2xl bg-[#fdf6ee] flex items-center justify-center text-3xl mb-6 group-hover:bg-[#c4622d] group-hover:text-white transition-colors shadow-inner">
+              <Link key={w.title} to={w.link} className="bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group border border-[#eab308]/8 hover:border-[#eab308]/25">
+                <div className="w-14 h-14 rounded-2xl bg-[#fefce8] flex items-center justify-center text-3xl mb-6 group-hover:bg-[#eab308] group-hover:text-white transition-colors shadow-inner">
                   {w.icon}
                 </div>
-                <h3 className="font-extrabold text-[#1e1610] text-xl mb-3 group-hover:text-[#c4622d] transition-colors">{w.title}</h3>
+                <h3 className="font-extrabold text-[#1e1610] text-xl mb-3 group-hover:text-[#eab308] transition-colors">{w.title}</h3>
                 <p className="text-[#6b5c4a] text-sm leading-relaxed font-light">{w.desc}</p>
               </Link>
             ))}

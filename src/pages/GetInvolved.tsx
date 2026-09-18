@@ -16,7 +16,7 @@ export default function GetInvolved() {
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Get Involved</span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-3xl leading-tight mb-6">
-            You Can Change a <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#c4622d]">Child's Life</span>
+            You Can Change a <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">Child's Life</span>
           </h1>
           <p className="text-white/70 text-xl font-light max-w-xl">There are many ways to stand with us — from a monthly gift to showing up in person.</p>
         </div>
@@ -42,22 +42,22 @@ function WaysToHelp() {
     { icon: '📦', title: 'In-Kind Donations', desc: 'Bedding, clothing, school supplies, food, medical supplies — physical donations are always needed.', cta: 'See the List', link: '#in-kind', hot: false },
   ]
   return (
-    <section className="py-32 bg-[#fdf6ee]">
+    <section className="py-32 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="inline-block bg-[#c4622d]/10 text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Ways to Help</span>
+          <span className="inline-block bg-[#eab308]/10 text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Ways to Help</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-5">Choose Your Path</h2>
           <p className="text-[#6b5c4a] text-lg max-w-md mx-auto font-light">Whether you give time, money, or resources — there is a way for you to be part of this story.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ways.map(w => (
-            <div key={w.title} className={`rounded-3xl p-8 transition-all hover:-translate-y-1 duration-300 group ${w.hot ? 'bg-gradient-to-br from-[#c4622d] to-[#8c3d14] shadow-2xl shadow-[#c4622d]/30' : 'bg-white border border-[#c4622d]/8 hover:border-[#c4622d]/25 hover:shadow-xl'}`}>
-              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 ${w.hot ? 'bg-white/15' : 'bg-[#fdf6ee] group-hover:bg-[#c4622d] group-hover:text-white transition-colors shadow-inner'}`}>
+            <div key={w.title} className={`rounded-3xl p-8 transition-all hover:-translate-y-1 duration-300 group ${w.hot ? 'bg-gradient-to-br from-[#eab308] to-[#ca8a04] shadow-2xl shadow-[#eab308]/30' : 'bg-white border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-xl'}`}>
+              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 ${w.hot ? 'bg-white/15' : 'bg-[#fefce8] group-hover:bg-[#eab308] group-hover:text-white transition-colors shadow-inner'}`}>
                 {w.icon}
               </div>
-              <h3 className={`font-extrabold text-xl mb-3 ${w.hot ? 'text-white' : 'text-[#1e1610] group-hover:text-[#c4622d] transition-colors'}`}>{w.title}</h3>
+              <h3 className={`font-extrabold text-xl mb-3 ${w.hot ? 'text-white' : 'text-[#1e1610] group-hover:text-[#eab308] transition-colors'}`}>{w.title}</h3>
               <p className={`text-sm leading-relaxed mb-8 font-light ${w.hot ? 'text-white/80' : 'text-[#6b5c4a]'}`}>{w.desc}</p>
-              <Link to={w.link} className={`inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all hover:scale-105 ${w.hot ? 'bg-white text-[#c4622d] hover:bg-[#fdf6ee] shadow-lg' : 'bg-[#c4622d]/10 text-[#c4622d] hover:bg-[#c4622d]/20'}`}>
+              <Link to={w.link} className={`inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all hover:scale-105 ${w.hot ? 'bg-white text-[#eab308] hover:bg-[#fefce8] shadow-lg' : 'bg-[#eab308]/10 text-[#eab308] hover:bg-[#eab308]/20'}`}>
                 {w.cta} →
               </Link>
             </div>
@@ -71,7 +71,7 @@ function WaysToHelp() {
 function SponsorSection() {
   const tiers = [
     { name: 'Friend', amount: '$15/mo', color: 'border-[#4a8c60]/30', accent: 'text-[#2d5a3d]', bg: 'bg-white', perks: ['Monthly newsletter', 'Named in annual report', 'Know you are making a difference'] },
-    { name: 'Supporter', amount: '$35/mo', color: 'border-[#c4622d]/30', accent: 'text-[#c4622d]', bg: 'bg-white', perks: ['All Friend benefits', 'Feeds one child for a month', 'Personalized thank-you letter'] },
+    { name: 'Supporter', amount: '$35/mo', color: 'border-[#eab308]/30', accent: 'text-[#eab308]', bg: 'bg-white', perks: ['All Friend benefits', 'Feeds one child for a month', 'Personalized thank-you letter'] },
     { name: 'Champion', amount: '$75/mo', color: 'border-[#d4a017]/30', accent: 'text-[#8c6500]', bg: 'bg-white', perks: ["All Supporter benefits", 'School fee contribution', "Quarterly impact update"] },
     { name: 'Sponsor', amount: '$150/mo', color: 'border-[#1e1610]', accent: 'text-[#f0c94a]', bg: 'bg-[#1e1610]', popular: true, perks: ['Complete child sponsorship', 'Named sponsor of a child', 'Photo updates & letters', 'Annual impact report'] },
   ]
@@ -79,14 +79,14 @@ function SponsorSection() {
     <section className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="inline-block bg-[#fdf6ee] text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Child Sponsorship</span>
+          <span className="inline-block bg-[#fefce8] text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Child Sponsorship</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-5">Sponsor a Child Monthly</h2>
           <p className="text-[#6b5c4a] text-lg max-w-md mx-auto font-light">Monthly giving creates the stability these children need. Choose a level that works for you.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {tiers.map(t => (
             <div key={t.name} className={`rounded-3xl border-2 p-8 relative ${t.color} ${t.bg} hover:-translate-y-1 transition-all duration-300`}>
-              {t.popular && <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#c4622d] to-[#e8855a] text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-lg">Most Impactful</span>}
+              {t.popular && <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#eab308] to-[#fde047] text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-lg">Most Impactful</span>}
               <div className={`font-extrabold text-xs uppercase tracking-widest mb-2 ${t.accent}`}>{t.name}</div>
               <div className={`text-4xl font-extrabold mb-6 ${t.popular ? 'text-white' : 'text-[#1e1610]'}`}>{t.amount}</div>
               <ul className="space-y-3 mb-8">
@@ -96,7 +96,7 @@ function SponsorSection() {
                   </li>
                 ))}
               </ul>
-              <Link to="/donate" className={`block text-center text-sm font-extrabold py-3.5 rounded-2xl transition-all hover:scale-105 ${t.popular ? 'bg-gradient-to-r from-[#c4622d] to-[#e8855a] text-white shadow-lg shadow-[#c4622d]/30' : 'bg-[#fdf6ee] text-[#1e1610] hover:bg-[#c4622d]/10 hover:text-[#c4622d]'}`}>
+              <Link to="/donate" className={`block text-center text-sm font-extrabold py-3.5 rounded-2xl transition-all hover:scale-105 ${t.popular ? 'bg-gradient-to-r from-[#eab308] to-[#fde047] text-white shadow-lg shadow-[#eab308]/30' : 'bg-[#fefce8] text-[#1e1610] hover:bg-[#eab308]/10 hover:text-[#eab308]'}`}>
                 Start Sponsoring
               </Link>
             </div>
@@ -110,12 +110,12 @@ function SponsorSection() {
 function VolunteerSection() {
   const [submitted, setSubmitted] = useState(false)
   return (
-    <section id="volunteer" className="py-32 bg-[#fdf6ee]">
+    <section id="volunteer" className="py-32 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
-            <div className="inline-block bg-white text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">Volunteer</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-6 leading-tight">Come and <span className="text-[#c4622d]">Be Present</span></h2>
+            <div className="inline-block bg-white text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">Volunteer</div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-6 leading-tight">Come and <span className="text-[#eab308]">Be Present</span></h2>
             <p className="text-[#6b5c4a] leading-relaxed mb-10 text-lg font-light">
               Local youth groups already visit monthly to wash clothes, play with the children, and bring food. We welcome individuals, groups, churches, schools, and professionals.
             </p>
@@ -128,17 +128,17 @@ function VolunteerSection() {
                 { icon: '💼', label: 'Professionals & Mentors', desc: 'Career guidance, life skills, financial literacy' },
                 { icon: '❤️', label: 'Just Show Up', desc: 'Play, listen, encourage — presence is powerful' },
               ].map(v => (
-                <div key={v.label} className="flex gap-5 items-center bg-white rounded-2xl px-6 py-4 border border-[#c4622d]/8 hover:border-[#c4622d]/25 hover:shadow-sm transition-all group">
+                <div key={v.label} className="flex gap-5 items-center bg-white rounded-2xl px-6 py-4 border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-sm transition-all group">
                   <span className="text-2xl">{v.icon}</span>
                   <div>
-                    <div className="font-bold text-[#1e1610] text-sm group-hover:text-[#c4622d] transition-colors">{v.label}</div>
+                    <div className="font-bold text-[#1e1610] text-sm group-hover:text-[#eab308] transition-colors">{v.label}</div>
                     <div className="text-[#8a7968] text-xs mt-0.5 font-light">{v.desc}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="bg-white border border-[#c4622d]/8 rounded-[2.5rem] p-10 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+          <div className="bg-white border border-[#eab308]/8 rounded-[2.5rem] p-10 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
             <h3 className="font-extrabold text-[#1e1610] text-2xl mb-8">Volunteer Interest Form</h3>
             {submitted ? (
               <div className="text-center py-12">
@@ -149,12 +149,12 @@ function VolunteerSection() {
             ) : (
               <form className="space-y-5" onSubmit={e => { e.preventDefault(); setSubmitted(true) }}>
                 <div className="grid grid-cols-2 gap-4">
-                  <input type="text" placeholder="First name" className="border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                  <input type="text" placeholder="Last name" className="border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                  <input type="text" placeholder="First name" className="border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                  <input type="text" placeholder="Last name" className="border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                 </div>
-                <input type="email" placeholder="Email address" className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                <input type="text" placeholder="Country / City" className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
-                <select className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] text-[#6b5c4a] font-medium">
+                <input type="email" placeholder="Email address" className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                <input type="text" placeholder="Country / City" className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
+                <select className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] text-[#6b5c4a] font-medium">
                   <option>My skills / area of contribution</option>
                   <option>Teaching & Tutoring</option>
                   <option>Building & Construction</option>
@@ -163,8 +163,8 @@ function VolunteerSection() {
                   <option>Professional Mentoring</option>
                   <option>General Volunteering</option>
                 </select>
-                <textarea rows={3} placeholder="Tell us about yourself and your availability..." className="w-full border-2 border-[#c4622d]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] resize-none font-medium" />
-                <button type="submit" className="w-full bg-gradient-to-r from-[#c4622d] to-[#e8855a] hover:from-[#8c3d14] hover:to-[#c4622d] text-white font-extrabold py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl shadow-[#c4622d]/25">
+                <textarea rows={3} placeholder="Tell us about yourself and your availability..." className="w-full border-2 border-[#eab308]/15 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] resize-none font-medium" />
+                <button type="submit" className="w-full bg-gradient-to-r from-[#eab308] to-[#fde047] hover:from-[#ca8a04] hover:to-[#eab308] text-white font-extrabold py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl shadow-[#eab308]/25">
                   Submit Interest →
                 </button>
               </form>
@@ -235,7 +235,7 @@ function PartnershipSection() {
     <section id="partner" className="py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="inline-block bg-[#fdf6ee] text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Partnerships</span>
+          <span className="inline-block bg-[#fefce8] text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Partnerships</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-5">Formal Partnership Opportunities</h2>
           <p className="text-[#6b5c4a] text-lg max-w-lg mx-auto font-light">We are open to partnerships with NGOs, corporations, faith organizations, schools, and government bodies.</p>
         </div>
@@ -246,13 +246,13 @@ function PartnershipSection() {
             { type: 'NGO Collaboration', icon: '🌐', desc: 'Joint programming, shared resources, and referral partnerships with other Kenya-based organizations.' },
             { type: 'Educational Institutions', icon: '🎓', desc: 'Schools and universities can partner for service learning, exchanges, and scholarship funding.' },
           ].map(p => (
-            <div key={p.type} className="bg-[#fdf6ee] rounded-3xl p-8 border border-[#c4622d]/8 hover:border-[#c4622d]/25 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
-              <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:bg-[#c4622d] group-hover:text-white transition-colors">
+            <div key={p.type} className="bg-[#fefce8] rounded-3xl p-8 border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+              <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:bg-[#eab308] group-hover:text-white transition-colors">
                 {p.icon}
               </div>
-              <h3 className="font-extrabold text-[#1e1610] text-lg mb-3 group-hover:text-[#c4622d] transition-colors">{p.type}</h3>
+              <h3 className="font-extrabold text-[#1e1610] text-lg mb-3 group-hover:text-[#eab308] transition-colors">{p.type}</h3>
               <p className="text-[#6b5c4a] text-sm leading-relaxed font-light mb-6 flex-grow">{p.desc}</p>
-              <Link to="/contact" className="text-[#c4622d] text-sm font-bold hover:text-[#8c3d14] transition-colors flex items-center gap-1">Enquire <span className="group-hover:translate-x-1 transition-transform">→</span></Link>
+              <Link to="/contact" className="text-[#eab308] text-sm font-bold hover:text-[#ca8a04] transition-colors flex items-center gap-1">Enquire <span className="group-hover:translate-x-1 transition-transform">→</span></Link>
             </div>
           ))}
         </div>
@@ -275,16 +275,16 @@ function InKindDonations() {
     'Cooking equipment and utensils',
   ]
   return (
-    <section id="in-kind" className="py-32 bg-[#fdf6ee]">
+    <section id="in-kind" className="py-32 bg-[#fefce8]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>
-            <div className="inline-block bg-white text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">In-Kind Donations</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-8 leading-tight">Send Physical <span className="text-[#c4622d]">Supplies</span></h2>
+            <div className="inline-block bg-white text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">In-Kind Donations</div>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-8 leading-tight">Send Physical <span className="text-[#eab308]">Supplies</span></h2>
             <p className="text-[#6b5c4a] leading-relaxed mb-8 text-lg font-light">
               Physical goods can be arranged to be shipped or delivered to the home in Mai-Mahiu. If you are in Kenya or traveling to Nairobi, coordinating a drop-off is simple. Contact us to arrange logistics.
             </p>
-            <Link to="/contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#c4622d] to-[#e8855a] text-white px-8 py-4 rounded-full font-extrabold hover:scale-105 transition-transform shadow-xl shadow-[#c4622d]/25">
+            <Link to="/contact" className="inline-flex items-center gap-2 bg-gradient-to-r from-[#eab308] to-[#fde047] text-white px-8 py-4 rounded-full font-extrabold hover:scale-105 transition-transform shadow-xl shadow-[#eab308]/25">
               Contact to Arrange →
             </Link>
           </div>
@@ -292,8 +292,8 @@ function InKindDonations() {
             <h3 className="font-extrabold text-[#1e1610] text-xl mb-8">Currently Most Needed</h3>
             <div className="grid grid-cols-2 gap-3">
               {items.map(item => (
-                <div key={item} className="flex gap-3 items-center bg-white rounded-2xl px-5 py-4 border border-[#c4622d]/8 hover:border-[#c4622d]/20 transition-colors">
-                  <span className="w-2 h-2 rounded-full bg-[#c4622d] shrink-0" />
+                <div key={item} className="flex gap-3 items-center bg-white rounded-2xl px-5 py-4 border border-[#eab308]/8 hover:border-[#eab308]/20 transition-colors">
+                  <span className="w-2 h-2 rounded-full bg-[#eab308] shrink-0" />
                   <span className="text-[#6b5c4a] text-sm font-light">{item}</span>
                 </div>
               ))}

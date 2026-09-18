@@ -43,12 +43,12 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="py-6 bg-[#fdf6ee] border-b border-[#c4622d11] sticky top-16 z-40">
+      <section className="py-6 bg-[#fefce8] border-b border-[#eab30811] sticky top-16 z-40">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map(c => (
               <button key={c} onClick={() => setCat(c)}
-                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${cat === c ? 'bg-[#c4622d] text-white' : 'bg-white border border-[#c4622d22] text-[#6b5c4a] hover:border-[#c4622d]'}`}>
+                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${cat === c ? 'bg-[#eab308] text-white' : 'bg-white border border-[#eab30822] text-[#6b5c4a] hover:border-[#eab308]'}`}>
                 {c}
               </button>
             ))}
@@ -56,11 +56,11 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="py-10 bg-[#fdf6ee]">
+      <section className="py-10 bg-[#fefce8]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 space-y-3">
             {filtered.map(p => (
-              <div key={p.id} className="break-inside-avoid cursor-pointer group overflow-hidden rounded-xl bg-[#c4622d11]"
+              <div key={p.id} className="break-inside-avoid cursor-pointer group overflow-hidden rounded-xl bg-[#eab30811]"
                 onClick={() => setLightbox(p)}>
                 <img src={p.thumb} alt={p.caption} className="w-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>

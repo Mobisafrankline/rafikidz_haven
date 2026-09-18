@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 
 const NAV = [
+  { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
   { to: '/children', label: 'Our Children' },
   { to: '/programs', label: 'Programs' },
@@ -32,22 +33,25 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col">
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-xl shadow-[0_2px_30px_rgba(0,0,0,0.08)] border-b border-[#c4622d]/10'
+          ? 'bg-white/95 backdrop-blur-xl shadow-[0_2px_30px_rgba(0,0,0,0.08)] border-b border-[#eab308]/10'
           : isHome
             ? 'bg-transparent'
-            : 'bg-white/90 backdrop-blur-xl border-b border-[#c4622d]/10'
+            : 'bg-white/90 backdrop-blur-xl border-b border-[#eab308]/10'
       }`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className={`w-10 h-10 rounded-2xl flex items-center justify-center font-extrabold text-lg transition-all group-hover:scale-110 ${scrolled || !isHome ? 'bg-[#c4622d] text-white' : 'bg-white text-[#c4622d]'}`}>
-              R
-            </div>
-            <div>
-              <div className={`font-extrabold text-base leading-tight tracking-tight transition-colors ${scrolled || !isHome ? 'text-[#1e1610]' : 'text-white'}`}>
-                Rafikidz Haven
+          <Link to="/" className="flex items-center gap-3 group bg-black/20 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-2 -ml-2 rounded-xl">
+            <img src="/logo.png" alt="Rafikidz Haven Logo" className="h-12 w-auto object-contain drop-shadow-md" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling!.style.display = 'flex'; }} />
+            <div className="hidden items-center gap-3" style={{ display: 'none' }}>
+              <div className={`w-10 h-10 rounded-2xl flex items-center justify-center font-extrabold text-lg transition-all group-hover:scale-110 bg-[#eab308] text-[#1e1610] shadow-md`}>
+                R
               </div>
-              <div className={`text-[10px] leading-none tracking-widest uppercase font-medium transition-colors ${scrolled || !isHome ? 'text-[#8a7968]' : 'text-white/60'}`}>
-                Lemalah Children's Home
+              <div>
+                <div className={`font-extrabold text-base leading-tight tracking-tight transition-colors ${scrolled || !isHome ? 'text-[#1e1610]' : 'text-white drop-shadow-md'}`}>
+                  Rafikidz Haven
+                </div>
+                <div className={`text-[10px] leading-none tracking-widest uppercase font-medium transition-colors ${scrolled || !isHome ? 'text-[#8a7968]' : 'text-[#f0c94a] drop-shadow-md'}`}>
+                  Heartbeats of Hope
+                </div>
               </div>
             </div>
           </Link>
@@ -60,9 +64,9 @@ export default function Layout() {
                 className={({ isActive }) =>
                   `px-3.5 py-2 rounded-lg text-sm font-semibold transition-all ${
                     isActive
-                      ? 'text-[#c4622d] bg-[#c4622d]/8'
+                      ? 'text-[#eab308] bg-[#eab308]/8'
                       : scrolled || !isHome
-                        ? 'text-[#6b5c4a] hover:text-[#c4622d] hover:bg-[#c4622d]/5'
+                        ? 'text-[#6b5c4a] hover:text-[#eab308] hover:bg-[#eab308]/5'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
                   }`
                 }
@@ -73,19 +77,19 @@ export default function Layout() {
           </div>
 
           <div className="hidden lg:flex items-center gap-4">
-            <Link to="/contact" className={`text-sm font-semibold transition-colors ${scrolled || !isHome ? 'text-[#8a7968] hover:text-[#c4622d]' : 'text-white/70 hover:text-white'}`}>
+            <Link to="/contact" className={`text-sm font-semibold transition-colors ${scrolled || !isHome ? 'text-[#8a7968] hover:text-[#eab308]' : 'text-white/70 hover:text-white'}`}>
               Contact
             </Link>
             <Link
               to="/donate"
-              className="bg-gradient-to-r from-[#c4622d] to-[#e8855a] hover:from-[#8c3d14] hover:to-[#c4622d] text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-[#c4622d]/25"
+              className="bg-gradient-to-r from-[#eab308] to-[#fde047] hover:from-[#ca8a04] hover:to-[#eab308] text-[#1e1610] px-5 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105 shadow-lg shadow-[#eab308]/25"
             >
               Donate Now
             </Link>
           </div>
 
           <button
-            className={`lg:hidden p-2 rounded-xl transition-colors ${scrolled || !isHome ? 'text-[#c4622d] hover:bg-[#c4622d]/10' : 'text-white hover:bg-white/10'}`}
+            className={`lg:hidden p-2 rounded-xl transition-colors ${scrolled || !isHome ? 'text-[#eab308] hover:bg-[#eab308]/10' : 'text-white hover:bg-white/10'}`}
             onClick={() => setOpen(o => !o)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -95,20 +99,20 @@ export default function Layout() {
         </div>
 
         {open && (
-          <div className="lg:hidden bg-white/98 backdrop-blur-xl border-t border-[#c4622d]/10 px-6 py-5 shadow-xl">
+          <div className="lg:hidden bg-white/98 backdrop-blur-xl border-t border-[#eab308]/10 px-6 py-5 shadow-xl">
             <div className="flex flex-col gap-1">
               {[...NAV, { to: '/faq', label: 'FAQ' }, { to: '/contact', label: 'Contact' }].map(n => (
                 <NavLink
                   key={n.to}
                   to={n.to}
                   className={({ isActive }) =>
-                    `px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${isActive ? 'text-[#c4622d] bg-[#c4622d]/8' : 'text-[#6b5c4a] hover:text-[#c4622d] hover:bg-[#c4622d]/5'}`
+                    `px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${isActive ? 'text-[#eab308] bg-[#eab308]/8' : 'text-[#6b5c4a] hover:text-[#eab308] hover:bg-[#eab308]/5'}`
                   }
                 >
                   {n.label}
                 </NavLink>
               ))}
-              <Link to="/donate" className="mt-3 bg-gradient-to-r from-[#c4622d] to-[#e8855a] text-white text-center py-3.5 rounded-full font-bold text-sm shadow-lg">
+              <Link to="/donate" className="mt-3 bg-gradient-to-r from-[#eab308] to-[#fde047] text-[#1e1610] text-center py-3.5 rounded-full font-bold text-sm shadow-lg">
                 Donate Now
               </Link>
             </div>
@@ -158,13 +162,13 @@ function Footer() {
 
   return (
     <footer className="bg-[#1e1610] relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-64 h-64 bg-[#c4622d]/10 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute top-0 left-0 w-64 h-64 bg-[#eab308]/10 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#2d5a3d]/20 rounded-full blur-[120px] translate-x-1/4 translate-y-1/4" />
       <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
         <div className="grid md:grid-cols-4 gap-12 pb-14 border-b border-white/8">
           <div>
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-2xl bg-[#c4622d] flex items-center justify-center text-white font-extrabold text-lg">R</div>
+              <div className="w-10 h-10 rounded-2xl bg-[#eab308] flex items-center justify-center text-white font-extrabold text-lg">R</div>
               <span className="font-extrabold text-white text-lg leading-tight">Rafikidz Haven</span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-5">
@@ -176,7 +180,7 @@ function Footer() {
             <div className="mt-6">
               <Link
                 to="/donate"
-                className="inline-block bg-gradient-to-r from-[#c4622d] to-[#e8855a] text-white px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform shadow-lg shadow-[#c4622d]/25"
+                className="inline-block bg-gradient-to-r from-[#eab308] to-[#fde047] text-white px-6 py-3 rounded-full text-sm font-bold hover:scale-105 transition-transform shadow-lg shadow-[#eab308]/25"
               >
                 Donate Now →
               </Link>
@@ -196,7 +200,7 @@ function Footer() {
           ))}
         </div>
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/20 text-xs">
-          <span>© 2025 Rafikidz Haven / Lemalah Children's Home. All rights reserved.</span>
+          <span>© 2025 Rafikidz Haven / Heartbeats of Hope. All rights reserved.</span>
           <span>Mai-Mahiu, Nakuru County, Kenya · Est. 2006</span>
         </div>
       </div>

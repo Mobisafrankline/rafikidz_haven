@@ -22,7 +22,7 @@ export default function Contact() {
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Contact Us</span>
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-5">
-            Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#c4622d]">Talk</span>
+            Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">Talk</span>
           </h1>
           <p className="text-white/70 text-xl font-light max-w-xl">
             Whether you want to donate, volunteer, partner, or simply learn more — we would love to hear from you.
@@ -36,9 +36,9 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Left: Info */}
             <div>
-              <div className="inline-block bg-[#fdf6ee] text-[#c4622d] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Get in Touch</div>
+              <div className="inline-block bg-[#fefce8] text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Get in Touch</div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-6 leading-tight">
-                We're <span className="text-[#c4622d]">Here</span>
+                We're <span className="text-[#eab308]">Here</span>
               </h2>
               <p className="text-[#6b5c4a] leading-relaxed mb-10 text-lg font-light">
                 Rafikidz Haven / Lemalah Children's Home is open to partnerships, donations, volunteer visits, and media enquiries. We respond to all messages within 3–5 business days.
@@ -51,7 +51,7 @@ export default function Contact() {
                   { icon: '👤', title: 'CEO Contact', lines: ['Ms. Lucy M. Njogu', 'Chief Executive Officer'] },
                   { icon: '🤝', title: 'Partnerships & Media', lines: ['For formal partnerships, sponsorships,', 'and media enquiries, use the form →'] },
                 ].map(c => (
-                  <div key={c.title} className="flex gap-5 bg-[#fdf6ee] rounded-3xl px-6 py-5 border border-[#c4622d]/8 hover:border-[#c4622d]/20 transition-colors">
+                  <div key={c.title} className="flex gap-5 bg-[#fefce8] rounded-3xl px-6 py-5 border border-[#eab308]/8 hover:border-[#eab308]/20 transition-colors">
                     <span className="text-2xl mt-0.5 shrink-0">{c.icon}</span>
                     <div>
                       <div className="font-bold text-[#1e1610] text-sm mb-1">{c.title}</div>
@@ -74,7 +74,7 @@ export default function Contact() {
             </div>
 
             {/* Right: Form */}
-            <div className="bg-[#fdf6ee] border border-[#c4622d]/8 rounded-[2.5rem] p-10 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+            <div className="bg-[#fefce8] border border-[#eab308]/8 rounded-[2.5rem] p-10 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
               {submitted ? (
                 <div className="text-center py-16">
                   <div className="text-6xl mb-6">✉️</div>
@@ -90,24 +90,24 @@ export default function Contact() {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <label className="text-xs font-bold text-[#8a7968] uppercase tracking-widest mb-2 block">First Name</label>
-                        <input required type="text" placeholder="Jane" className="w-full border-2 border-[#c4622d]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                        <input required type="text" placeholder="Jane" className="w-full border-2 border-[#eab308]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                       </div>
                       <div>
                         <label className="text-xs font-bold text-[#8a7968] uppercase tracking-widest mb-2 block">Last Name</label>
-                        <input required type="text" placeholder="Doe" className="w-full border-2 border-[#c4622d]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                        <input required type="text" placeholder="Doe" className="w-full border-2 border-[#eab308]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                       </div>
                     </div>
                     <div>
                       <label className="text-xs font-bold text-[#8a7968] uppercase tracking-widest mb-2 block">Email Address</label>
-                      <input required type="email" placeholder="jane@example.com" className="w-full border-2 border-[#c4622d]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                      <input required type="email" placeholder="jane@example.com" className="w-full border-2 border-[#eab308]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                     </div>
                     <div>
                       <label className="text-xs font-bold text-[#8a7968] uppercase tracking-widest mb-2 block">Country</label>
-                      <input type="text" placeholder="Your country" className="w-full border-2 border-[#c4622d]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] font-medium" />
+                      <input type="text" placeholder="Your country" className="w-full border-2 border-[#eab308]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] font-medium" />
                     </div>
                     <div>
                       <label className="text-xs font-bold text-[#8a7968] uppercase tracking-widest mb-2 block">Subject</label>
-                      <select className="w-full border-2 border-[#c4622d]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] text-[#6b5c4a] font-medium">
+                      <select className="w-full border-2 border-[#eab308]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] text-[#6b5c4a] font-medium">
                         <option>I want to make a donation</option>
                         <option>I want to sponsor a child</option>
                         <option>I want to volunteer</option>
@@ -119,9 +119,9 @@ export default function Contact() {
                     </div>
                     <div>
                       <label className="text-xs font-bold text-[#8a7968] uppercase tracking-widest mb-2 block">Message</label>
-                      <textarea required rows={5} placeholder="Tell us how you'd like to help or what you'd like to know..." className="w-full border-2 border-[#c4622d]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#c4622d] resize-none font-medium" />
+                      <textarea required rows={5} placeholder="Tell us how you'd like to help or what you'd like to know..." className="w-full border-2 border-[#eab308]/15 bg-white rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#eab308] resize-none font-medium" />
                     </div>
-                    <button type="submit" className="w-full bg-gradient-to-r from-[#c4622d] to-[#e8855a] hover:from-[#8c3d14] hover:to-[#c4622d] text-white font-extrabold py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl shadow-[#c4622d]/25 text-base">
+                    <button type="submit" className="w-full bg-gradient-to-r from-[#eab308] to-[#fde047] hover:from-[#ca8a04] hover:to-[#eab308] text-white font-extrabold py-5 rounded-2xl transition-all hover:scale-[1.02] shadow-xl shadow-[#eab308]/25 text-base">
                       Send Message →
                     </button>
                   </form>
@@ -133,7 +133,7 @@ export default function Contact() {
       </section>
 
       {/* Quick links */}
-      <section className="py-20 bg-[#fdf6ee]">
+      <section className="py-20 bg-[#fefce8]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold text-[#1e1610]">Quick Links</h2>
@@ -145,11 +145,11 @@ export default function Contact() {
               { icon: '❓', title: 'FAQ', sub: 'Common questions answered', link: '/faq' },
               { icon: '📰', title: 'News', sub: 'Updates from the home', link: '/news' },
             ].map(q => (
-              <Link key={q.title} to={q.link} className="bg-white rounded-3xl p-7 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group border border-[#c4622d]/8 hover:border-[#c4622d]/25">
-                <div className="w-14 h-14 rounded-2xl bg-[#fdf6ee] flex items-center justify-center text-3xl mb-4 mx-auto group-hover:bg-[#c4622d] group-hover:text-white transition-colors shadow-inner">
+              <Link key={q.title} to={q.link} className="bg-white rounded-3xl p-7 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group border border-[#eab308]/8 hover:border-[#eab308]/25">
+                <div className="w-14 h-14 rounded-2xl bg-[#fefce8] flex items-center justify-center text-3xl mb-4 mx-auto group-hover:bg-[#eab308] group-hover:text-white transition-colors shadow-inner">
                   {q.icon}
                 </div>
-                <div className="font-extrabold text-[#1e1610] text-lg group-hover:text-[#c4622d] transition-colors">{q.title}</div>
+                <div className="font-extrabold text-[#1e1610] text-lg group-hover:text-[#eab308] transition-colors">{q.title}</div>
                 <div className="text-[#8a7968] text-xs mt-2 font-light">{q.sub}</div>
               </Link>
             ))}
