@@ -1,0 +1,10 @@
+{
+  "description": "Create a user-friendly website for NGOs like Rafikidz, enhancing their online presence and showcasing their mission to improve lives.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
