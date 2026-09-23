@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
+import logoSrc from '../assets/logo.png'
 
 const NAV = [
   { to: '/', label: 'Home' },
@@ -42,7 +43,7 @@ export default function Layout() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/logo.png"
+              src={logoSrc}
               alt="Rafikidz Haven Logo"
               className="h-12 w-auto object-contain drop-shadow-md transition-transform group-hover:scale-105"
             />
@@ -186,7 +187,7 @@ function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-3 mb-6 group">
               <img
-                src="/logo.png"
+                src={logoSrc}
                 alt="Rafikidz Haven"
                 className="h-14 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
               />
