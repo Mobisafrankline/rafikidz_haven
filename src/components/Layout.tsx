@@ -39,19 +39,19 @@ export default function Layout() {
             ? 'bg-transparent'
             : 'bg-white/92 backdrop-blur-xl border-b border-[#2B7E8C]/10'
       }`}>
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink-0">
             <img
               src={logoSrc}
               alt="Rafikidz Haven Logo"
-              className="h-12 w-auto object-contain drop-shadow-md transition-transform group-hover:scale-105"
+              className="h-10 sm:h-12 w-auto object-contain drop-shadow-md transition-transform group-hover:scale-105"
             />
-            <div className="flex flex-col">
-              <span className={`font-extrabold text-base leading-tight tracking-tight transition-colors ${scrolled || !isHome ? 'text-[#1A2E33]' : 'text-white drop-shadow-md'}`}>
+            <div className="flex flex-col min-w-0">
+              <span className={`font-extrabold text-sm sm:text-base leading-tight tracking-tight transition-colors whitespace-nowrap ${scrolled || !isHome ? 'text-[#1A2E33]' : 'text-white drop-shadow-md'}`}>
                 Rafikidz Haven
               </span>
-              <span className={`text-[10px] leading-none tracking-widest uppercase font-medium transition-colors ${scrolled || !isHome ? 'text-[#5A7880]' : 'text-[#F5B429] drop-shadow-md'}`}>
+              <span className={`text-[9px] sm:text-[10px] leading-none tracking-[0.12em] uppercase font-medium transition-colors whitespace-nowrap ${scrolled || !isHome ? 'text-[#5A7880]' : 'text-[#F5B429] drop-shadow-md'}`}>
                 Heartbeats of Hope
               </span>
             </div>
