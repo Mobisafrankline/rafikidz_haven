@@ -40,20 +40,12 @@ export default function Layout() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink-0">
+          <Link to="/" className="flex items-center group min-w-0 shrink-0">
             <img
               src="/logo.png"
               alt="Rafikidz Haven Logo"
-              className="h-10 sm:h-12 w-auto object-contain drop-shadow-md transition-transform group-hover:scale-105"
+              className="h-10 sm:h-12 md:h-14 w-auto max-w-[240px] object-contain drop-shadow-md transition-transform group-hover:scale-[1.02]"
             />
-            <div className="flex flex-col min-w-0">
-              <span className={`font-extrabold text-sm sm:text-base leading-tight tracking-tight transition-colors whitespace-nowrap ${scrolled || !isHome ? 'text-[#1A2E33]' : 'text-white drop-shadow-md'}`}>
-                Rafikidz Haven
-              </span>
-              <span className={`text-[9px] sm:text-[10px] leading-none tracking-[0.12em] uppercase font-medium transition-colors whitespace-nowrap ${scrolled || !isHome ? 'text-[#5A7880]' : 'text-[#F5B429] drop-shadow-md'}`}>
-                Heartbeats of Hope
-              </span>
-            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -184,16 +176,12 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-12 pb-14 border-b border-white/8">
           {/* Brand column */}
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-6 group">
+            <Link to="/" className="flex items-center mb-6 group">
               <img
                 src="/logo.png"
                 alt="Rafikidz Haven"
-                className="h-14 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
+                className="h-14 w-auto max-w-[260px] object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
               />
-              <div className="flex flex-col">
-                <span className="font-extrabold text-white text-base leading-tight">Rafikidz Haven</span>
-                <span className="text-[#F5B429] text-[10px] uppercase tracking-widest font-medium">Heartbeats of Hope</span>
-              </div>
             </Link>
             <p className="text-white/45 text-sm leading-relaxed mb-5">
               Providing orphaned and vulnerable children with shelter, education, and love in Kenya since 2006.
