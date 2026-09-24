@@ -1,6 +1,29 @@
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Home() {
+  useSEO({
+    path: '/',
+    keywords:
+      "Rafikidz Haven, children's home Kenya, orphanage Kenya, donate Kenya, Mai-Mahiu charity, sponsor a child Kenya, vulnerable children Kenya, Lemalah Children's Home",
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'DonateAction',
+        agent: { '@type': 'NGO', name: 'Rafikidz Haven', url: 'https://rafikidzhaven.org' },
+        recipient: { '@type': 'NGO', name: 'Rafikidz Haven' },
+        description: 'Donate to support 50+ orphaned children in Kenya',
+        url: 'https://rafikidzhaven.org/donate',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+        ],
+      },
+    ],
+  })
   return (
     <div className="bg-white">
       <HeroSection />

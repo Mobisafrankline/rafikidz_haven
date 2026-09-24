@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 const FAQS = [
   {
@@ -49,6 +50,35 @@ const FAQS = [
 ]
 
 export default function FAQ() {
+  useSEO({
+    title: 'FAQ – Frequently Asked Questions',
+    description:
+      'Answers to the most common questions about Rafikidz Haven: how donations are used, how to volunteer, how to sponsor a child, and how the home is registered in Kenya.',
+    path: '/faq',
+    keywords:
+      'Rafikidz Haven FAQ, Kenya orphanage questions, how to donate Kenya, sponsor child FAQ, children home Kenya questions',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: FAQS.flatMap(cat =>
+          cat.items.map(item => ({
+            '@type': 'Question',
+            name: item.q,
+            acceptedAnswer: { '@type': 'Answer', text: item.a },
+          }))
+        ),
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'FAQ', item: 'https://rafikidzhaven.org/faq' },
+        ],
+      },
+    ],
+  })
   const [open, setOpen] = useState<string | null>(null)
 
   return (

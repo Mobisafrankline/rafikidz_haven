@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block build artifacts
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /.git/
+
+Sitemap: https://rafikidzhaven.org/sitemap.xml

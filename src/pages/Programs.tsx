@@ -1,6 +1,25 @@
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Programs() {
+  useSEO({
+    title: 'Our Programs – Holistic Care for Every Child',
+    description:
+      'Discover the six pillars of care at Rafikidz Haven: safe shelter, education, nutrition, healthcare, vocational skills, and emotional support for 50+ orphaned children in Kenya.',
+    path: '/programs',
+    keywords:
+      'Kenya orphanage programs, children education Kenya, holistic child care Kenya, vocational training Kenya children, Rafikidz Haven programs',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Programs', item: 'https://rafikidzhaven.org/programs' },
+        ],
+      },
+    ],
+  })
   return (
     <div>
       {/* Hero */}

@@ -1,7 +1,33 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function GetInvolved() {
+  useSEO({
+    title: 'Get Involved – Volunteer, Partner & Fundraise',
+    description:
+      'Join the Rafikidz Haven mission. Donate, volunteer, partner with us, or fundraise for 50+ orphaned children in Kenya. Every act of support changes a life.',
+    path: '/get-involved',
+    keywords:
+      'volunteer Kenya orphanage, partner Rafikidz Haven, fundraise for Kenya children, support orphans Kenya, how to help children Kenya',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'VolunteerAction',
+        agent: { '@type': 'Organization', name: 'Rafikidz Haven', url: 'https://rafikidzhaven.org' },
+        description: 'Volunteer, fundraise, or partner with Rafikidz Haven to support orphaned children in Kenya',
+        url: 'https://rafikidzhaven.org/get-involved',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Get Involved', item: 'https://rafikidzhaven.org/get-involved' },
+        ],
+      },
+    ],
+  })
   return (
     <div>
       {/* Hero */}

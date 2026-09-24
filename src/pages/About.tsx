@@ -1,6 +1,34 @@
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function About() {
+  useSEO({
+    title: 'About Us – Our Story & Mission',
+    description:
+      "Learn how Rafikidz Haven (Lemalah Children's Home) was born in 2006 when Pastor Peter Warari took in two street boys in Kenya. Meet our board, explore our values, and discover our Mai-Mahiu location.",
+    path: '/about',
+    keywords:
+      "about Rafikidz Haven, Lemalah Children's Home history, Pastor Peter Warari, children's home Kenya story, Mai-Mahiu orphanage board, Kenya charity about",
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'AboutPage',
+        name: "About Rafikidz Haven – Lemalah Children's Home",
+        url: 'https://rafikidzhaven.org/about',
+        description:
+          "The story of how Rafikidz Haven began in 2006, our board of directors, core values, and our location in Mai-Mahiu, Nakuru County, Kenya.",
+        publisher: { '@type': 'NGO', name: 'Rafikidz Haven', url: 'https://rafikidzhaven.org' },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'About Us', item: 'https://rafikidzhaven.org/about' },
+        ],
+      },
+    ],
+  })
   return (
     <div>
       <PageHero

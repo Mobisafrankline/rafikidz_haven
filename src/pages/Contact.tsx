@@ -1,7 +1,33 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Contact() {
+  useSEO({
+    title: 'Contact Us – Get in Touch with Rafikidz Haven',
+    description:
+      'Contact Rafikidz Haven to donate, volunteer, partner, or ask questions about supporting children in Mai-Mahiu, Kenya. We\'d love to hear from you.',
+    path: '/contact',
+    keywords:
+      'contact Rafikidz Haven, Kenya orphanage contact, children home Kenya email, get in touch Rafikidz, Mai-Mahiu Kenya contact',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        name: 'Contact Rafikidz Haven',
+        url: 'https://rafikidzhaven.org/contact',
+        description: 'Get in touch with Rafikidz Haven for donations, volunteering, or general inquiries',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://rafikidzhaven.org/contact' },
+        ],
+      },
+    ],
+  })
   const [submitted, setSubmitted] = useState(false)
 
   return (

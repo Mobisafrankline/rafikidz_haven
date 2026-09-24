@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 const AMOUNTS = [15, 35, 75, 150, 300]
 
@@ -12,6 +13,32 @@ const AMOUNT_LABELS: Record<number, string> = {
 }
 
 export default function Donate() {
+  useSEO({
+    title: 'Donate – Give Directly to Children in Kenya',
+    description:
+      'Make a secure donation to Rafikidz Haven. $35/month feeds one child for 30 days. $150/month fully sponsors one child. 100% of every dollar goes directly to children in Kenya.',
+    path: '/donate',
+    keywords:
+      'donate Kenya orphans, sponsor a child Kenya, give to children Kenya, Rafikidz Haven donate, children charity Kenya donation',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'DonateAction',
+        agent: { '@type': 'NGO', name: 'Rafikidz Haven', url: 'https://rafikidzhaven.org' },
+        recipient: { '@type': 'NGO', name: 'Rafikidz Haven' },
+        description: 'Donate to Rafikidz Haven to support 50+ orphaned children in Kenya',
+        url: 'https://rafikidzhaven.org/donate',
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Donate', item: 'https://rafikidzhaven.org/donate' },
+        ],
+      },
+    ],
+  })
   const [selected, setSelected] = useState(35)
   const [custom, setCustom] = useState('')
   const [freq, setFreq] = useState<'monthly' | 'once'>('monthly')

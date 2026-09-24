@@ -1,6 +1,25 @@
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Vision() {
+  useSEO({
+    title: 'Our Vision – Building a Future in Kenya',
+    description:
+      'Learn about the future of Rafikidz Haven: expanding our children\'s home, building a school, and creating a vocational polytechnic in Mai-Mahiu, Kenya.',
+    path: '/vision',
+    keywords:
+      'Rafikidz Haven vision, Kenya orphanage future, children home Kenya plans, Lemalah school project, Mai-Mahiu charity expansion',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Vision', item: 'https://rafikidzhaven.org/vision' },
+        ],
+      },
+    ],
+  })
   return (
     <div>
       <section className="relative min-h-[50vh] flex items-end overflow-hidden">

@@ -1,6 +1,25 @@
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 export default function Impact() {
+  useSEO({
+    title: 'Our Impact – Transforming Lives in Kenya Since 2006',
+    description:
+      'See the measurable impact of Rafikidz Haven: 50+ children sheltered, 18+ years of service, 100% donation transparency, and alumni thriving in work and higher education in Kenya.',
+    path: '/impact',
+    keywords:
+      'Rafikidz Haven impact, charity results Kenya, children home impact Kenya, transparent donations Kenya, orphanage outcomes Kenya',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Impact', item: 'https://rafikidzhaven.org/impact' },
+        ],
+      },
+    ],
+  })
   return (
     <div>
       <section className="relative min-h-[50vh] flex items-end overflow-hidden">

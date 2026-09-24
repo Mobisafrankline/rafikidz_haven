@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 const ARTICLES = [
   {
@@ -61,6 +62,24 @@ const ARTICLES = [
 const TAGS = ['All', 'Urgent Appeal', 'Success Story', 'Community', 'Farm Update', 'Education', 'Partnership']
 
 export default function News() {
+  useSEO({
+    title: 'News & Updates – From the Home in Kenya',
+    description:
+      'Read the latest updates from Rafikidz Haven: urgent appeals, alumni success stories, community volunteer days, and milestones from Lemalah Children\'s Home in Kenya.',
+    path: '/news',
+    keywords:
+      'Rafikidz Haven news, Kenya orphanage updates, children home Kenya news, Lemalah updates, Kenya charity news',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'News', item: 'https://rafikidzhaven.org/news' },
+        ],
+      },
+    ],
+  })
   const [activeTag, setActiveTag] = useState('All')
   const [expanded, setExpanded] = useState<number | null>(null)
 

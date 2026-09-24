@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
+import { useSEO } from '../hooks/useSEO'
 
 const ALL_CHILDREN = [
   { name: 'Wilson Muga', status: 'Adult — Working', level: 'Alumni', story: 'One of the very first two children, rescued as a street boy from Githurai in 2006. His arrival sparked the entire movement that became Lemalah.', img: 'https://images.unsplash.com/photo-1547496613-4e19af6736dc?w=400&h=300&fit=crop&auto=format' },
@@ -28,6 +29,24 @@ const LEVEL_COLORS: Record<string, string> = {
 }
 
 export default function Children() {
+  useSEO({
+    title: 'Our Children – Stories of Hope & Resilience',
+    description:
+      'Meet the 50+ orphaned and vulnerable children at Lemalah Children\'s Home in Kenya — from the founding four in 2006 to today\'s primary, secondary, and vocational students.',
+    path: '/children',
+    keywords:
+      'children Lemalah Kenya, orphaned children Kenya, sponsored children Kenya, Kenya orphanage kids, Rafikidz Haven children stories',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Our Children', item: 'https://rafikidzhaven.org/children' },
+        ],
+      },
+    ],
+  })
   const [filter, setFilter] = useState('All')
 
   const filtered = filter === 'All' ? ALL_CHILDREN : ALL_CHILDREN.filter(c => c.level === filter)

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useSEO } from '../hooks/useSEO'
 
 const PHOTOS = [
   { id: 1, src: 'https://images.unsplash.com/photo-1547496614-d145e2fa88ed?w=800&h=600&fit=crop&auto=format', thumb: 'https://images.unsplash.com/photo-1547496614-d145e2fa88ed?w=400&h=300&fit=crop&auto=format', caption: 'Three boys from the home, smiling at the camera', category: 'Children' },
@@ -24,6 +25,24 @@ const PHOTOS = [
 const CATEGORIES = ['All', 'Children', 'Education', 'Recreation', 'Daily Life', 'Farm & Food', 'Location']
 
 export default function Gallery() {
+  useSEO({
+    title: 'Photo Gallery – Life at Lemalah Children\'s Home',
+    description:
+      'Browse photos from Rafikidz Haven: children learning, playing, farming, and growing up in a safe and loving home in Mai-Mahiu, Kenya.',
+    path: '/gallery',
+    keywords:
+      'Rafikidz Haven photos, Kenya orphanage gallery, children home Kenya pictures, Lemalah photos, Kenya charity images',
+    jsonLd: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://rafikidzhaven.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Gallery', item: 'https://rafikidzhaven.org/gallery' },
+        ],
+      },
+    ],
+  })
   const [cat, setCat] = useState('All')
   const [lightbox, setLightbox] = useState<typeof PHOTOS[0] | null>(null)
 
