@@ -169,13 +169,12 @@ function Accountability() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            { icon: '🏛️', title: 'Registered CBO', desc: 'Officially registered with the Kenya Ministry of Culture and Social Services.' },
-            { icon: '📋', title: 'Project Advisory Committee', desc: 'A PAC meets quarterly to review programs, accounts, and audited statements.' },
-            { icon: '📊', title: 'Audited Accounts', desc: 'Financial records are audited and reviewed regularly by the Director of Finance.' },
-            { icon: '📬', title: 'Donor Reporting', desc: 'Supporters receive regular updates on how their donations are being used.' },
+            { title: 'Registered CBO', desc: 'Officially registered with the Kenya Ministry of Culture and Social Services.' },
+            { title: 'Project Advisory Committee', desc: 'A PAC meets quarterly to review programs, accounts, and audited statements.' },
+            { title: 'Audited Accounts', desc: 'Financial records are audited and reviewed regularly by the Director of Finance.' },
+            { title: 'Donor Reporting', desc: 'Supporters receive regular updates on how their donations are being used.' },
           ].map(a => (
             <div key={a.title} className="bg-white border border-[#eab3080d] rounded-2xl p-6">
-              <div className="text-3xl mb-3">{a.icon}</div>
               <h3 className="font-bold text-[#1e1610] mb-2" style={{ fontFamily: 'Fraunces, serif' }}>{a.title}</h3>
               <p className="text-[#6b5c4a] text-sm leading-relaxed">{a.desc}</p>
             </div>
@@ -188,7 +187,7 @@ function Accountability() {
 
 function AnnualHighlights() {
   const years = [
-    { year: '2024', highlights: ['52 children in care — highest ever', 'Long waiting list established', 'Expansion funding appeal launched', '60+ chickens producing daily eggs'] },
+    { year: '2024', highlights: ['52 children in care, highest ever', 'Long waiting list established', 'Expansion funding appeal launched', '60+ chickens producing daily eggs'] },
     { year: '2023', highlights: ['James Wamalwa & David Wasike graduated', 'South Africa donor continued 17th year', 'New vegetable crops planted', 'Youth volunteer days increased to monthly'] },
     { year: '2022', highlights: ['Borehole repaired and operational', 'Hannah Njoki enrolled in secondary school', 'Local community group food drives started', 'Board of Directors formalized'] },
   ]

@@ -203,9 +203,9 @@ function CommunityProgram() {
 
 function FuturePrograms() {
   const future = [
-    { icon: '🏫', title: 'On-Site Primary & Secondary School', timeline: 'Within 3–7 years', desc: 'Classrooms, qualified teachers, and a full school on our land — serving both our children and the wider community.' },
-    { icon: '🔧', title: 'Vocational Polytechnic', timeline: '7–10 years', desc: 'A trades and technology college for young adults — ICT, construction, agriculture, and more.' },
-    { icon: '🌍', title: 'Branch Homes Across Kenya', timeline: 'Long-term vision', desc: 'Replicating the Lemalah model in other regions to serve the most vulnerable children wherever they are.' },
+    { title: 'On-Site Primary and Secondary School', timeline: 'Within 3 to 7 years', desc: 'Classrooms, qualified teachers, and a full school on our land, serving both our children and the wider community.' },
+    { title: 'Vocational Polytechnic', timeline: '7 to 10 years', desc: 'A trades and technology college for young adults covering ICT, construction, agriculture, and more.' },
+    { title: 'Branch Homes Across Kenya', timeline: 'Long-term vision', desc: 'Replicating the Lemalah model in other regions to serve the most vulnerable children wherever they are.' },
   ]
   return (
     <section className="py-32 bg-[#2d5a3d] relative overflow-hidden">
@@ -219,7 +219,6 @@ function FuturePrograms() {
         <div className="grid md:grid-cols-3 gap-8">
           {future.map(f => (
             <div key={f.title} className="glass rounded-3xl p-10 text-white hover:bg-white/15 transition-all hover:-translate-y-1 group">
-              <div className="text-5xl mb-6">{f.icon}</div>
               <span className="inline-block bg-[#f0c94a]/20 text-[#f0c94a] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">{f.timeline}</span>
               <h3 className="text-2xl font-extrabold mt-2 mb-4 group-hover:text-[#f0c94a] transition-colors">{f.title}</h3>
               <p className="text-white/60 leading-relaxed font-light">{f.desc}</p>

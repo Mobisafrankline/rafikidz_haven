@@ -81,7 +81,7 @@ function OriginStory() {
             </h2>
             <div className="space-y-5 text-[#6b5c4a] leading-relaxed text-lg font-light">
               <p>
-                In 2006, Pastor Peter Warari was approached by a desperate family member who begged him to rescue two young street boys — Wilson Muga and James Gitonga — who had run away from violence and sexual abuse in Githurai, Nairobi.
+                In 2006, Pastor Peter Warari was approached by a desperate family member who begged him to rescue two young street boys, Wilson Muga and James Gitonga, who had run away from violence and sexual abuse in Githurai, Nairobi.
               </p>
               <p>
                 Pastor Warari took them in. Later, their mother was found murdered in coffee bushes near Juja. Their two sisters had nowhere to go, so they joined the boys. Four children. One household. A calling had begun.
@@ -93,7 +93,7 @@ function OriginStory() {
                 He reached out to Mrs. Theresiah W. Njogu, a church elder, for support. Together they built a semi-permanent structure on church land in Ndeiya, Limuru. Soon that too was overwhelmed. They sold a plot of land, purchased 5 acres in Mai-Mahiu, Nakuru County, and with the help of well-wishers and the community, built a new home for the growing family.
               </p>
               <p>
-                Today, Lemalah Children's Home operates on those 5 acres with 52 children and a long waiting list of children who need us — and whom we cannot yet reach.
+                Today, Lemalah Children's Home operates on those 5 acres with 52 children and a long waiting list of children who need us and whom we cannot yet reach.
               </p>
             </div>
           </div>
@@ -175,12 +175,12 @@ function Timeline() {
 
 function MissionValues() {
   const values = [
-    { icon: '🤲', title: 'Compassion First', desc: 'Every decision we make starts with asking: what does this child need? Not what is convenient, but what is right.' },
-    { icon: '📖', title: 'Discipline & Education', desc: 'We believe a disciplined mind and a good education are the two most powerful tools we can give a child.' },
-    { icon: '🌍', title: 'Community Rooted', desc: 'We are not imported charity. We are part of this community — sustained by local churches, neighbors, and the Kenyan diaspora.' },
-    { icon: '🔭', title: 'Long-Term Thinking', desc: 'We are not in the business of temporary fixes. We plan for children to grow up, graduate, work, and build families of their own.' },
-    { icon: '🔍', title: 'Transparency', desc: 'Every donation is tracked and reported. The Project Advisory Committee reviews accounts quarterly.' },
-    { icon: '✨', title: 'Spiritual Foundation', desc: 'Our deepest aspiration is to see each child grow into a God-fearing, responsible adult who gives back to the world.' },
+    { title: 'Compassion First', desc: 'Every decision we make starts with asking: what does this child need? Not what is convenient, but what is right.' },
+    { title: 'Discipline and Education', desc: 'We believe a disciplined mind and a good education are the two most powerful tools we can give a child.' },
+    { title: 'Community Rooted', desc: 'We are not imported charity. We are part of this community, sustained by local churches, neighbors, and the Kenyan diaspora.' },
+    { title: 'Long-Term Thinking', desc: 'We are not in the business of temporary fixes. We plan for children to grow up, graduate, work, and build families of their own.' },
+    { title: 'Transparency', desc: 'Every donation is tracked and reported. The Project Advisory Committee reviews accounts quarterly.' },
+    { title: 'Spiritual Foundation', desc: 'Our deepest aspiration is to see each child grow into a God-fearing, responsible adult who gives back to the world.' },
   ]
   return (
     <section className="py-32 bg-[#1e1610] relative overflow-hidden">
@@ -195,7 +195,6 @@ function MissionValues() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map(v => (
             <div key={v.title} className="glass rounded-3xl p-8 hover:bg-white/15 transition-all hover:-translate-y-1 group">
-              <div className="text-4xl mb-5">{v.icon}</div>
               <h3 className="font-extrabold text-white text-xl mb-3 group-hover:text-[#f0c94a] transition-colors">{v.title}</h3>
               <p className="text-white/60 text-sm leading-relaxed font-light">{v.desc}</p>
             </div>
@@ -250,20 +249,20 @@ function LocationSection() {
               Mai-Mahiu,<br /><span className="text-[#eab308]">Nakuru County</span>
             </h2>
             <p className="text-[#6b5c4a] leading-relaxed mb-5 text-lg font-light">
-              We are located in Mai-Mahiu — a village approximately 33 miles northwest of Nairobi, in Nakuru County along the Great Rift Valley escarpment. The land is fertile, the air is cool, and the community is tight-knit.
+              We are located in Mai-Mahiu, a village approximately 33 miles northwest of Nairobi, in Nakuru County along the Great Rift Valley escarpment. The land is fertile, the air is cool, and the community is tight-knit.
             </p>
             <p className="text-[#6b5c4a] leading-relaxed mb-10 text-lg font-light">
               Our 5-acre plot hosts the main dormitories, a kitchen, a borehole for clean water, vegetable gardens, chicken coops, and land earmarked for the future school.
             </p>
             <div className="space-y-4">
               {[
-                ['📍', 'Mai-Mahiu, Nakuru County, Kenya'],
-                ['🗺️', '~33 miles northwest of Nairobi City Center'],
-                ['🌿', '5 acres — farming, housing & future school land'],
-                ['💧', 'On-site borehole for clean drinking water'],
-              ].map(([icon, text]) => (
-                <div key={text as string} className="flex gap-4 items-center bg-white rounded-2xl px-5 py-4 shadow-sm border border-[#eab308]/6">
-                  <span className="text-2xl">{icon}</span>
+                ['Mai-Mahiu, Nakuru County, Kenya'],
+                ['Approximately 33 miles northwest of Nairobi City Center'],
+                ['5 acres of farming, housing and future school land'],
+                ['On-site borehole for clean drinking water'],
+              ].map(([text]) => (
+                <div key={text} className="flex gap-4 items-center bg-white rounded-2xl px-5 py-4 shadow-sm border border-[#eab308]/6">
+                  <span className="w-2 h-2 rounded-full bg-[#eab308] shrink-0" />
                   <span className="text-[#6b5c4a] font-medium text-sm">{text}</span>
                 </div>
               ))}

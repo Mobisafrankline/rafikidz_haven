@@ -41,11 +41,13 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
           {/* Logo */}
           <Link to="/" className="flex items-center group min-w-0 shrink-0">
-            <img
-              src="/logo.png"
-              alt="Rafikidz Haven Logo"
-              className="h-10 sm:h-12 md:h-14 w-auto max-w-[240px] object-contain drop-shadow-md transition-transform group-hover:scale-[1.02]"
-            />
+            {!isHome && (
+              <img
+                src="/logo.png"
+                alt="Rafikidz Haven Logo"
+                className="h-10 sm:h-12 md:h-14 w-auto max-w-[240px] object-contain drop-shadow-md transition-transform group-hover:scale-[1.02]"
+              />
+            )}
           </Link>
 
           {/* Desktop Nav */}

@@ -44,7 +44,7 @@ export default function GetInvolved() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-3xl leading-tight mb-6">
             You Can Change a <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">Child's Life</span>
           </h1>
-          <p className="text-white/70 text-xl font-light max-w-xl">There are many ways to stand with us — from a monthly gift to showing up in person.</p>
+          <p className="text-white/70 text-xl font-light max-w-xl">There are many ways to stand with us, from a monthly gift to showing up in person.</p>
         </div>
       </section>
 
@@ -60,12 +60,12 @@ export default function GetInvolved() {
 
 function WaysToHelp() {
   const ways = [
-    { icon: '💝', title: 'Sponsor a Child', desc: "A monthly gift of $150 covers a child's complete needs — food, shelter, education, healthcare, and clothing.", cta: 'Sponsor Now', link: '/donate', hot: true },
-    { icon: '💰', title: 'Make a Donation', desc: 'One-time or recurring gifts of any size. $15, $35, $75 — every amount has a direct, tangible impact.', cta: 'Donate', link: '/donate', hot: false },
-    { icon: '🙋', title: 'Volunteer', desc: 'Come to Mai-Mahiu. Teach, build, counsel, cook, or simply spend time with the children. Skills and hearts welcome.', cta: 'Apply to Volunteer', link: '#volunteer', hot: false },
-    { icon: '🤝', title: 'Partner With Us', desc: 'Businesses, churches, schools, and NGOs — formal partnership agreements are available. Help us scale.', cta: 'Become a Partner', link: '#partner', hot: false },
-    { icon: '📢', title: 'Fundraise for Us', desc: 'Run a birthday campaign, organize an event, or challenge your community. We provide all the tools you need.', cta: 'Start Fundraising', link: '#fundraise', hot: false },
-    { icon: '📦', title: 'In-Kind Donations', desc: 'Bedding, clothing, school supplies, food, medical supplies — physical donations are always needed.', cta: 'See the List', link: '#in-kind', hot: false },
+    { title: 'Sponsor a Child', desc: "A monthly gift of $150 covers a child's complete needs: food, shelter, education, healthcare, and clothing.", cta: 'Sponsor Now', link: '/donate', hot: true },
+    { title: 'Make a Donation', desc: 'One-time or recurring gifts of any size. $15, $35, $75 — every amount has a direct, tangible impact.', cta: 'Donate', link: '/donate', hot: false },
+    { title: 'Volunteer', desc: 'Come to Mai-Mahiu. Teach, build, counsel, cook, or simply spend time with the children. Skills and hearts welcome.', cta: 'Apply to Volunteer', link: '#volunteer', hot: false },
+    { title: 'Partner With Us', desc: 'Businesses, churches, schools, and NGOs — formal partnership agreements are available. Help us scale.', cta: 'Become a Partner', link: '#partner', hot: false },
+    { title: 'Fundraise for Us', desc: 'Run a birthday campaign, organize an event, or challenge your community. We provide all the tools you need.', cta: 'Start Fundraising', link: '#fundraise', hot: false },
+    { title: 'In-Kind Donations', desc: 'Bedding, clothing, school supplies, food, medical supplies — physical donations are always needed.', cta: 'See the List', link: '#in-kind', hot: false },
   ]
   return (
     <section className="py-32 bg-[#fefce8]">
@@ -78,9 +78,6 @@ function WaysToHelp() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ways.map(w => (
             <div key={w.title} className={`rounded-3xl p-8 transition-all hover:-translate-y-1 duration-300 group ${w.hot ? 'bg-gradient-to-br from-[#eab308] to-[#ca8a04] shadow-2xl shadow-[#eab308]/30' : 'bg-white border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-xl'}`}>
-              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6 ${w.hot ? 'bg-white/15' : 'bg-[#fefce8] group-hover:bg-[#eab308] group-hover:text-white transition-colors shadow-inner'}`}>
-                {w.icon}
-              </div>
               <h3 className={`font-extrabold text-xl mb-3 ${w.hot ? 'text-white' : 'text-[#1e1610] group-hover:text-[#eab308] transition-colors'}`}>{w.title}</h3>
               <p className={`text-sm leading-relaxed mb-8 font-light ${w.hot ? 'text-white/80' : 'text-[#6b5c4a]'}`}>{w.desc}</p>
               <Link to={w.link} className={`inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full transition-all hover:scale-105 ${w.hot ? 'bg-white text-[#eab308] hover:bg-[#fefce8] shadow-lg' : 'bg-[#eab308]/10 text-[#eab308] hover:bg-[#eab308]/20'}`}>
@@ -147,15 +144,14 @@ function VolunteerSection() {
             </p>
             <div className="space-y-4">
               {[
-                { icon: '👩‍🏫', label: 'Teachers & Tutors', desc: 'Help with homework, teach skills, run workshops' },
-                { icon: '🏗️', label: 'Builders & Tradespeople', desc: 'Construction, plumbing, carpentry, electrical' },
-                { icon: '🩺', label: 'Medical Professionals', desc: 'Health screenings, first aid training, wellness' },
-                { icon: '📸', label: 'Creatives & Communicators', desc: 'Photography, storytelling, digital outreach' },
-                { icon: '💼', label: 'Professionals & Mentors', desc: 'Career guidance, life skills, financial literacy' },
-                { icon: '❤️', label: 'Just Show Up', desc: 'Play, listen, encourage — presence is powerful' },
+                { label: 'Teachers and Tutors', desc: 'Help with homework, teach skills, run workshops' },
+                { label: 'Builders and Tradespeople', desc: 'Construction, plumbing, carpentry, electrical' },
+                { label: 'Medical Professionals', desc: 'Health screenings, first aid training, wellness' },
+                { label: 'Creatives and Communicators', desc: 'Photography, storytelling, digital outreach' },
+                { label: 'Professionals and Mentors', desc: 'Career guidance, life skills, financial literacy' },
+                { label: 'Just Show Up', desc: 'Play, listen, encourage — presence is powerful' },
               ].map(v => (
                 <div key={v.label} className="flex gap-5 items-center bg-white rounded-2xl px-6 py-4 border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-sm transition-all group">
-                  <span className="text-2xl">{v.icon}</span>
                   <div>
                     <div className="font-bold text-[#1e1610] text-sm group-hover:text-[#eab308] transition-colors">{v.label}</div>
                     <div className="text-[#8a7968] text-xs mt-0.5 font-light">{v.desc}</div>
@@ -170,7 +166,7 @@ function VolunteerSection() {
               <div className="text-center py-12">
                 <div className="text-5xl mb-5">🙌</div>
                 <h4 className="font-extrabold text-[#1e1610] text-xl mb-3">Thank You!</h4>
-                <p className="text-[#6b5c4a] font-light">We've received your interest. Our team will reach out within 3–5 days with next steps.</p>
+                <p className="text-[#6b5c4a] font-light">We've received your interest. Our team will reach out within 3 to 5 days with next steps.</p>
               </div>
             ) : (
               <form className="space-y-5" onSubmit={e => { e.preventDefault(); setSubmitted(true) }}>
@@ -267,15 +263,12 @@ function PartnershipSection() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { type: 'Corporate', icon: '🏢', desc: 'CSR partnerships, employee giving programs, and co-branded campaigns.' },
-            { type: 'Faith Organizations', icon: '⛪', desc: 'Churches, mosques, and faith groups — long-term giving relationships and volunteer missions.' },
-            { type: 'NGO Collaboration', icon: '🌐', desc: 'Joint programming, shared resources, and referral partnerships with other Kenya-based organizations.' },
-            { type: 'Educational Institutions', icon: '🎓', desc: 'Schools and universities can partner for service learning, exchanges, and scholarship funding.' },
+            { type: 'Corporate', desc: 'CSR partnerships, employee giving programs, and co-branded campaigns.' },
+            { type: 'Faith Organizations', desc: 'Churches, mosques, and faith groups — long-term giving relationships and volunteer missions.' },
+            { type: 'NGO Collaboration', desc: 'Joint programming, shared resources, and referral partnerships with other Kenya-based organizations.' },
+            { type: 'Educational Institutions', desc: 'Schools and universities can partner for service learning, exchanges, and scholarship funding.' },
           ].map(p => (
             <div key={p.type} className="bg-[#fefce8] rounded-3xl p-8 border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
-              <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:bg-[#eab308] group-hover:text-white transition-colors">
-                {p.icon}
-              </div>
               <h3 className="font-extrabold text-[#1e1610] text-lg mb-3 group-hover:text-[#eab308] transition-colors">{p.type}</h3>
               <p className="text-[#6b5c4a] text-sm leading-relaxed font-light mb-6 flex-grow">{p.desc}</p>
               <Link to="/contact" className="text-[#eab308] text-sm font-bold hover:text-[#ca8a04] transition-colors flex items-center gap-1">Enquire <span className="group-hover:translate-x-1 transition-transform">→</span></Link>

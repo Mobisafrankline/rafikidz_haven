@@ -58,7 +58,7 @@ function HeroSection() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F5B429] to-[#FBCF5F]">Deserves</span> a Safe Home.
           </h1>
           <p className="text-white/80 text-xl md:text-2xl mb-12 leading-relaxed max-w-2xl font-light">
-            Rafikidz Haven shelters, educates, and nurtures <strong className="text-[#F5B429]">50+ kids</strong> — orphaned and vulnerable children in Kenya — transforming survival into thriving.
+            Rafikidz Haven shelters, educates, and nurtures <strong className="text-[#F5B429]">50+ kids</strong>, orphaned and vulnerable children in Kenya, transforming survival into thriving.
           </p>
           <div className="flex flex-wrap gap-5">
             <Link to="/donate" className="group relative inline-flex items-center justify-center bg-gradient-to-r from-[#F5B429] to-[#FBCF5F] text-[#0F3840] px-8 py-4 rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(245,180,41,0.4)]">
@@ -110,10 +110,10 @@ function MissionStrip() {
               Turning Hardship Into <span className="text-[#2B7E8C]">Hope</span>
             </h2>
             <p className="text-[#5A7880] leading-relaxed mb-6 text-lg md:text-xl font-light">
-              Lemalah Children's Home — the heart of Rafikidz Haven — started in 2006 when Pastor Peter Warari took in two street boys with nowhere else to go. What began as a family act of faith has grown into a certified community organization caring for <strong>50+ kids</strong>.
+              Lemalah Children's Home, the heart of Rafikidz Haven, started in 2006 when Pastor Peter Warari took in two street boys with nowhere else to go. What began as a family act of faith has grown into a certified community organization caring for <strong>50+ kids</strong>.
             </p>
             <p className="text-[#5A7880] leading-relaxed mb-10 text-lg md:text-xl font-light">
-              We provide food, shelter, clothing, education, and emotional safety. We don't just keep children alive — we help them become architects of their own futures.
+              We provide food, shelter, clothing, education, and emotional safety. We don't just keep children alive. We help them become architects of their own futures.
             </p>
             <Link to="/about" className="group inline-flex items-center gap-3 text-[#2B7E8C] font-bold text-lg hover:text-[#1D5A66] transition-colors">
               <span className="border-b-2 border-[#2B7E8C] pb-1">Read our full story</span>
@@ -202,12 +202,12 @@ function StoriesPreview() {
 
 function ProgramsGrid() {
   const programs = [
-    { icon: '🏠', title: 'Safe Shelter', desc: 'Dormitories and a secure home on 5 acres in Mai-Mahiu, Nakuru County.', link: '/programs' },
-    { icon: '📚', title: 'Education', desc: 'School fees from primary through university and vocational training.', link: '/programs' },
-    { icon: '🥗', title: 'Food & Nutrition', desc: 'Three meals a day, grown partly on our own farm.', link: '/programs' },
-    { icon: '🩺', title: 'Healthcare', desc: 'Primary health services, clean water, and personal wellness.', link: '/programs' },
-    { icon: '🛠️', title: 'Vocational Skills', desc: 'Future polytechnic for trades, tech, and employment readiness.', link: '/programs' },
-    { icon: '❤️', title: 'Emotional Care', desc: 'Counseling, community bonds, and a loving, accepting environment.', link: '/programs' },
+    { title: 'Safe Shelter', desc: 'Dormitories and a secure home on 5 acres in Mai-Mahiu, Nakuru County.', link: '/programs' },
+    { title: 'Education', desc: 'School fees from primary through university and vocational training.', link: '/programs' },
+    { title: 'Food & Nutrition', desc: 'Three meals a day, grown partly on our own farm.', link: '/programs' },
+    { title: 'Healthcare', desc: 'Primary health services, clean water, and personal wellness.', link: '/programs' },
+    { title: 'Vocational Skills', desc: 'Future polytechnic for trades, tech, and employment readiness.', link: '/programs' },
+    { title: 'Emotional Care', desc: 'Counseling, community bonds, and a loving, accepting environment.', link: '/programs' },
   ]
   return (
     <section className="py-32 bg-[#FAF6F0]">
@@ -220,9 +220,6 @@ function ProgramsGrid() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map(p => (
             <Link key={p.title} to={p.link} className="bg-white rounded-[2rem] p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(43,126,140,0.12)] hover:-translate-y-2 transition-all duration-300 group border border-transparent hover:border-[#2B7E8C]/20">
-              <div className="w-16 h-16 rounded-2xl bg-[#2B7E8C]/8 flex items-center justify-center text-3xl mb-6 group-hover:bg-[#2B7E8C] group-hover:text-white transition-colors duration-300 shadow-inner">
-                {p.icon}
-              </div>
               <h3 className="font-bold text-[#1A2E33] text-2xl mb-3">{p.title}</h3>
               <p className="text-[#5A7880] leading-relaxed font-light mb-6">{p.desc}</p>
               <div className="text-[#2B7E8C] font-bold text-sm flex items-center gap-2">
@@ -238,11 +235,11 @@ function ProgramsGrid() {
 
 function UrgentNeeds() {
   const needs = [
-    { label: 'Food for 50+ kids (3 meals/day)', amount: '$1,200/mo', hot: true },
-    { label: 'School fees & learning supplies', amount: '$900/mo', hot: true },
-    { label: 'Toiletries, clothing & hygiene', amount: '$350/mo', hot: false },
-    { label: 'Water pump & piped water', amount: '$2,500 once', hot: false },
-    { label: 'Perimeter fence & night security', amount: '$4,000 once', hot: false },
+    { label: 'Food for 50+ kids (3 meals a day)', amount: '$1,200/mo', hot: true },
+    { label: 'School fees and learning supplies', amount: '$900/mo', hot: true },
+    { label: 'Toiletries, clothing and hygiene', amount: '$350/mo', hot: false },
+    { label: 'Water pump and piped water', amount: '$2,500 once', hot: false },
+    { label: 'Perimeter fence and night security', amount: '$4,000 once', hot: false },
     { label: 'New dormitory construction', amount: '$15,000 once', hot: false },
   ]
   return (
@@ -255,7 +252,7 @@ function UrgentNeeds() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block bg-white/10 text-[#F5B429] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-white/20">Immediate Needs</span>
           <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6">Where Your Gift Goes</h2>
-          <p className="text-white/80 text-lg font-light">Transparent and direct — every donation reaches the children on our doorstep and waiting list.</p>
+          <p className="text-white/80 text-lg font-light">Transparent and direct. Every donation reaches the children on our doorstep and waiting list.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-16">
           {needs.map(n => (
@@ -287,7 +284,7 @@ function DonateCallout() {
           <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-                $35 Feeds One Child for a Month.
+                $35 Feeds One Child for a Month
               </h2>
               <p className="text-white/80 text-lg md:text-xl mb-10 leading-relaxed font-light">
                 A monthly gift — no matter the size — provides stability that these children have never known. Your donation is the difference between hunger and hope.
@@ -364,7 +361,8 @@ function PartnerLogos() {
   return (
     <section className="py-16 bg-[#FAF6F0]">
       <div className="max-w-7xl mx-auto px-6">
-        <p className="text-center text-[#8a7968] text-xs font-bold uppercase tracking-widest mb-10">Supported by & Working Alongside</p>
+        <p className="text-center text-[#8a7968] text-xs font-bold uppercase tracking-widest mb-3">Supported By and Working Alongside</p>
+        <p className="text-center text-[#8a7968] text-sm font-light mb-10 max-w-xl mx-auto">We are grateful to these organisations and networks for their support, collaboration, and solidarity with our mission.</p>
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
           {partners.map(p => (
             <span key={p} className="text-[#5A7880]/40 font-extrabold text-lg md:text-xl uppercase tracking-wider hover:text-[#2B7E8C] transition-colors cursor-default">{p}</span>
