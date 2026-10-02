@@ -22,15 +22,18 @@ export default function Vision() {
   })
   return (
     <div>
-      <section className="relative min-h-[50vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="https://images.unsplash.com/photo-1669196741160-8fc1c0ca925b?w=1600&h=700&fit=crop&auto=format" alt="Kenyan landscape" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610]/90 via-[#1e1610]/50 to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 pt-24">
-          <span className="inline-block text-[#f0c94a] text-xs font-bold uppercase tracking-[0.2em] mb-4">Vision & Goals</span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white max-w-2xl leading-tight mb-5" style={{ fontFamily: 'Fraunces, serif' }}>Building the Future We Believe In</h1>
-          <p className="text-white/65 text-lg max-w-xl">From a children's home to a school, to a polytechnic, to branches across Kenya — this is where we are headed.</p>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full text-center">
+          <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
+            <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Vision & Goals</span>
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">Building the Future We Believe In</h1>
+          <p className="text-white/70 text-xl font-light max-w-xl mx-auto">From a children's home to a school, to a polytechnic, to branches across Kenya ,  this is where we are headed.</p>
         </div>
       </section>
 
@@ -51,7 +54,7 @@ function MissionStatement() {
         <div className="max-w-3xl mx-auto text-center">
           <span className="text-[#eab308] text-xs font-bold uppercase tracking-widest">Our North Star</span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1e1610] mt-3 mb-8 leading-tight" style={{ fontFamily: 'Fraunces, serif' }}>
-            To see every child grow into a responsible, disciplined, and confident adult — equipped to build a life anywhere in the world.
+            To see every child grow into a responsible, disciplined, and confident adult ,  equipped to build a life anywhere in the world.
           </h2>
           <p className="text-[#6b5c4a] text-lg leading-relaxed">
             We place the highest values on discipline, education, and spiritual grounding. Our joy will be complete when every child we have cared for is living with dignity, serving their community, and raising families of their own.
@@ -67,7 +70,7 @@ function RoadmapSection() {
     {
       phase: 'Phase 1',
       title: 'Immediate Priorities',
-      timeline: 'Now — 2026',
+      timeline: 'Now ,  2026',
       color: 'bg-[#eab308]',
       textColor: 'text-[#eab308]',
       borderColor: 'border-[#eab308]',
@@ -85,7 +88,7 @@ function RoadmapSection() {
     {
       phase: 'Phase 2',
       title: 'Near-Future Growth',
-      timeline: '2027 — 2030',
+      timeline: '2027 ,  2030',
       color: 'bg-[#2d5a3d]',
       textColor: 'text-[#2d5a3d]',
       borderColor: 'border-[#2d5a3d]',
@@ -101,7 +104,7 @@ function RoadmapSection() {
     {
       phase: 'Phase 3',
       title: 'Long-Term Vision',
-      timeline: '2030 — 2035+',
+      timeline: '2030 ,  2035+',
       color: 'bg-[#d4a017]',
       textColor: 'text-[#8c6500]',
       borderColor: 'border-[#d4a017]',
@@ -279,7 +282,7 @@ function CallToAction() {
           This Vision Needs Your Partnership
         </h2>
         <p className="text-white/75 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-          We are not asking for charity. We are inviting you into a long-term investment in children who will go on to change Kenya — and possibly the world.
+          We are not asking for charity. We are inviting you into a long-term investment in children who will go on to change Kenya ,  and possibly the world.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link to="/donate" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-10 py-4 rounded-full font-bold text-base transition-colors">Fund a Phase →</Link>

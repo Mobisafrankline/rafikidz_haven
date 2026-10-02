@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+﻿import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
 export default function About() {
@@ -49,12 +49,12 @@ export default function About() {
 
 function PageHero({ tag, title, sub, img }: { tag: string; title: string; sub: string; img: string }) {
   return (
-    <section className="relative min-h-[65vh] flex items-end overflow-hidden">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img src={img} alt={title} className="w-full h-full object-cover scale-105" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
         <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
           <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">{tag}</span>
@@ -87,7 +87,7 @@ function OriginStory() {
                 Pastor Warari took them in. Later, their mother was found murdered in coffee bushes near Juja. Their two sisters had nowhere to go, so they joined the boys. Four children. One household. A calling had begun.
               </p>
               <p>
-                When people found out what Pastor Warari was doing, they started bringing other children — destitute, abandoned, orphaned. The numbers grew until his home could no longer hold them all.
+                When people found out what Pastor Warari was doing, they started bringing other children ,  destitute, abandoned, orphaned. The numbers grew until his home could no longer hold them all.
               </p>
               <p>
                 He reached out to Mrs. Theresiah W. Njogu, a church elder, for support. Together they built a semi-permanent structure on church land in Ndeiya, Limuru. Soon that too was overwhelmed. They sold a plot of land, purchased 5 acres in Mai-Mahiu, Nakuru County, and with the help of well-wishers and the community, built a new home for the growing family.
@@ -107,7 +107,7 @@ function OriginStory() {
             </div>
             <div className="bg-[#2d5a3d] rounded-3xl p-8 text-white">
               <p className="text-xl leading-relaxed font-medium mb-6">
-                "We have never had to look for children that need our help. The children found us through concerned relatives and neighbors — and they have come to us from all over the country."
+                "We have never had to look for children that need our help. The children found us through concerned relatives and neighbors ,  and they have come to us from all over the country."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-white/15 flex items-center justify-center text-base font-bold">TN</div>
@@ -130,7 +130,7 @@ function Timeline() {
     { year: '2008', title: 'Moving to Limuru', desc: 'A structure is built on church land in Ndeiya, Limuru to house the growing number of children.' },
     { year: '2011', title: '5 Acres in Mai-Mahiu', desc: 'Land purchased in Nakuru County using proceeds from a sold plot. Two structures built with community support.' },
     { year: '2015', title: 'Registered CBO', desc: "Lemalah Children's Home registers as a Community Based Organization with the Ministry of Culture and Social Services." },
-    { year: '2019', title: 'Growing the Farm', desc: 'The home expands its food production — vegetables, corn, beans, chickens for eggs, and one dairy cow.' },
+    { year: '2019', title: 'Growing the Farm', desc: 'The home expands its food production ,  vegetables, corn, beans, chickens for eggs, and one dairy cow.' },
     { year: '2024', title: '52 Children & Counting', desc: 'The home reaches 52 children in care with a growing waiting list. Expansion plans underway.' },
     { year: '2030+', title: 'The Vision', desc: 'A full private school and polytechnic serving children at the home and in surrounding communities.' },
   ]

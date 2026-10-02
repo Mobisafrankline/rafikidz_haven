@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
 
 const NAV = [
@@ -189,7 +189,7 @@ function Footer() {
               Providing orphaned and vulnerable children with shelter, education, and love in Kenya since 2006.
             </p>
             <p className="text-white/25 text-xs leading-relaxed">
-              Registered CBO — Kenya Ministry of<br />Culture & Social Services
+              Registered CBO ,  Kenya Ministry of<br />Culture & Social Services
             </p>
             <div className="mt-6">
               <Link

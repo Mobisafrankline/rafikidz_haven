@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative min-h-[55vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1601071733462-d0bbb6ee7a02?w=1600&h=600&fit=crop&auto=format"
@@ -42,7 +42,7 @@ export default function Contact() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
           <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Contact Us</span>
@@ -51,7 +51,7 @@ export default function Contact() {
             Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">Talk</span>
           </h1>
           <p className="text-white/70 text-xl font-light max-w-xl">
-            Whether you want to donate, volunteer, partner, or simply learn more — we would love to hear from you.
+            Whether you want to donate, volunteer, partner, or simply learn more ,  we would love to hear from you.
           </p>
         </div>
       </section>
@@ -89,7 +89,7 @@ export default function Contact() {
 
               <div className="bg-gradient-to-br from-[#2d5a3d] to-[#1a3825] rounded-3xl p-8 text-white">
                 <h3 className="font-extrabold text-xl mb-3">Ready to donate right now?</h3>
-                <p className="text-white/70 text-sm mb-6 font-light">You don't have to wait — go straight to our donation page and make an immediate impact.</p>
+                <p className="text-white/70 text-sm mb-6 font-light">You don't have to wait ,  go straight to our donation page and make an immediate impact.</p>
                 <Link
                   to="/donate"
                   className="inline-flex items-center gap-2 bg-[#f0c94a] text-[#1e1610] px-7 py-3.5 rounded-full font-extrabold hover:bg-white transition-colors shadow-lg"

@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+﻿import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
 export default function Home() {
@@ -159,13 +159,13 @@ function StoriesPreview() {
     {
       name: 'James Wamalwa',
       age: 'Vocational College',
-      story: 'His pastor father disappeared without a trace. James came from western Kenya, finished high school, and is now studying a vocational trade — building toward self-sufficiency.',
+      story: 'His pastor father disappeared without a trace. James came from western Kenya, finished high school, and is now studying a vocational trade ,  building toward self-sufficiency.',
       img: 'https://images.unsplash.com/photo-1520542764791-6f45f69be58d?w=600&h=700&fit=crop&auto=format',
     },
     {
       name: 'Wilson & The First Four',
       age: 'The Founding Children',
-      story: 'Wilson Muga and James Gitonga — the first two street boys who arrived in 2006 — started everything. Their sisters followed. They are now adults carrying Lemalah\'s legacy forward.',
+      story: 'Wilson Muga and James Gitonga ,  the first two street boys who arrived in 2006 ,  started everything. Their sisters followed. They are now adults carrying Lemalah\'s legacy forward.',
       img: 'https://images.unsplash.com/photo-1664990594674-418f27010fee?w=600&h=700&fit=crop&auto=format',
     },
   ]
@@ -287,7 +287,7 @@ function DonateCallout() {
                 $35 Feeds One Child for a Month
               </h2>
               <p className="text-white/80 text-lg md:text-xl mb-10 leading-relaxed font-light">
-                A monthly gift — no matter the size — provides stability that these children have never known. Your donation is the difference between hunger and hope.
+                A monthly gift ,  no matter the size ,  provides stability that these children have never known. Your donation is the difference between hunger and hope.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/donate" className="bg-[#F5B429] text-[#0F3840] hover:bg-[#FBCF5F] px-8 py-4 rounded-full font-bold transition-transform hover:scale-105 shadow-xl">
@@ -322,7 +322,7 @@ function NewsPreview() {
   const articles = [
     { date: 'August 2025', tag: 'Update', title: '50+ Kids, Zero Beds to Spare: Our Urgent Call for Expansion', excerpt: 'Our dormitories are beyond capacity. Boys and girls share overcrowded rooms. We are calling on donors to help us build two new housing blocks before the rainy season.' },
     { date: 'June 2025', tag: 'Success Story', title: 'James and David Graduate Vocational College', excerpt: 'Two brothers who arrived at Lemalah as destitute children have now completed their vocational training and are entering the workforce with skills and confidence.' },
-    { date: 'April 2025', tag: 'Community', title: 'Youth Groups Organize Volunteer Day at the Home', excerpt: 'Over 40 young volunteers from nearby towns came to wash clothes, counsel children, and bring food — a testament to growing community support.' },
+    { date: 'April 2025', tag: 'Community', title: 'Youth Groups Organize Volunteer Day at the Home', excerpt: 'Over 40 young volunteers from nearby towns came to wash clothes, counsel children, and bring food ,  a testament to growing community support.' },
   ]
   return (
     <section className="py-32 bg-white pt-48 -mt-24" id="news-preview">

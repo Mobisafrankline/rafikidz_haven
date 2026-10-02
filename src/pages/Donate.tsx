@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
@@ -50,7 +50,7 @@ export default function Donate() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative min-h-[50vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1590099543482-eba8c1aab773?w=1600&h=700&fit=crop&auto=format"
@@ -59,7 +59,7 @@ export default function Donate() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
           <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a] animate-pulse" />
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Make a Difference Today</span>
@@ -178,7 +178,7 @@ export default function Donate() {
                       {amount > 0 && (
                         <div className="bg-[#eab308]/8 border border-[#eab308]/15 rounded-2xl p-4 mb-6 text-sm">
                           <span className="font-extrabold text-[#eab308]">${amount}{freq === 'monthly' ? '/month' : ' one-time'}</span>
-                          <span className="text-[#6b5c4a] ml-2 font-light">— {AMOUNT_LABELS[amount] || 'every dollar goes directly to the children'}</span>
+                          <span className="text-[#6b5c4a] ml-2 font-light">,  {AMOUNT_LABELS[amount] || 'every dollar goes directly to the children'}</span>
                         </div>
                       )}
                       <button
@@ -198,7 +198,7 @@ export default function Donate() {
                       </div>
                       <div className="bg-[#fefce8] border border-[#eab308]/15 rounded-2xl p-4 mb-6">
                         <span className="font-extrabold text-[#eab308] text-lg">${amount}{freq === 'monthly' ? '/month' : ' one-time'}</span>
-                        <span className="text-[#8a7968] ml-2 text-sm">— {freq === 'monthly' ? 'recurring monthly' : 'single gift'}</span>
+                        <span className="text-[#8a7968] ml-2 text-sm">,  {freq === 'monthly' ? 'recurring monthly' : 'single gift'}</span>
                       </div>
                       <form className="space-y-4" onSubmit={e => { e.preventDefault(); setSubmitted(true) }}>
                         <div className="grid grid-cols-2 gap-3">

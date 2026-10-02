@@ -9,7 +9,7 @@ const ARTICLES = [
     date: 'September 2025',
     title: '52 Children, Zero Beds to Spare: We Need Your Help to Expand',
     excerpt: 'Our dormitories are beyond capacity. Boys and girls share crowded rooms. We are calling on donors worldwide to help fund two new housing blocks before the rainy season begins in October.',
-    body: 'The situation at Lemalah Children\'s Home has reached a critical threshold. With 52 children currently in our care — and a long waiting list of siblings and community children we cannot yet accept — our dormitory facilities are severely overcrowded. Children are sharing beds. Personal space is nearly nonexistent. We need to build two new housing structures: one for boys, one for girls, each with adequate beds, lockers, and ventilation. The cost is estimated at $15,000 for both blocks. If you can help, please donate today.',
+    body: 'The situation at Lemalah Children\'s Home has reached a critical threshold. With 52 children currently in our care ,  and a long waiting list of siblings and community children we cannot yet accept ,  our dormitory facilities are severely overcrowded. Children are sharing beds. Personal space is nearly nonexistent. We need to build two new housing structures: one for boys, one for girls, each with adequate beds, lockers, and ventilation. The cost is estimated at $15,000 for both blocks. If you can help, please donate today.',
     img: 'https://images.unsplash.com/photo-1664990594667-9bd4c60cbcfb?w=800&h=500&fit=crop&auto=format',
   },
   {
@@ -18,7 +18,7 @@ const ARTICLES = [
     date: 'August 2025',
     title: 'James Wamalwa and David Wasike Complete Vocational College',
     excerpt: 'Two brothers who arrived at Lemalah as destitute children have now completed their vocational training. They are the first in their family to earn professional qualifications.',
-    body: 'James and David came to us from western Kenya after their father — a pastor — disappeared without explanation and never returned. They had no one to care for them. Today, both have graduated from vocational college and are entering the workforce with skills that will sustain them for life. Their success is proof that with the right support, children from the hardest backgrounds can build extraordinary futures. We are deeply proud of James and David, and we celebrate them as testament to what Lemalah stands for.',
+    body: 'James and David came to us from western Kenya after their father ,  a pastor ,  disappeared without explanation and never returned. They had no one to care for them. Today, both have graduated from vocational college and are entering the workforce with skills that will sustain them for life. Their success is proof that with the right support, children from the hardest backgrounds can build extraordinary futures. We are deeply proud of James and David, and we celebrate them as testament to what Lemalah stands for.',
     img: 'https://images.unsplash.com/photo-1571417800906-5a5058dbd45d?w=800&h=500&fit=crop&auto=format',
   },
   {
@@ -36,7 +36,7 @@ const ARTICLES = [
     date: 'June 2025',
     title: 'Harvest Season at Lemalah: Tomatoes, Corn, and New Crops',
     excerpt: 'Our farm had an excellent season this year. Tomatoes, corn, and beans are providing nutritional variety and reducing monthly food costs. Plans to expand the chicken flock are underway.',
-    body: 'Farming has always been central to Lemalah\'s sustainability strategy. This season, we harvested a strong yield of tomatoes, corn, beans, and peas. The children participate in farm activities, learning about agriculture and food security as they grow. Our 60 chickens continue to produce eggs daily. We are now planning to double the flock and purchase a second dairy cow to increase the home\'s self-sufficiency. A local seed company has offered to donate vegetable seeds for the next planting season — a wonderful act of community generosity.',
+    body: 'Farming has always been central to Lemalah\'s sustainability strategy. This season, we harvested a strong yield of tomatoes, corn, beans, and peas. The children participate in farm activities, learning about agriculture and food security as they grow. Our 60 chickens continue to produce eggs daily. We are now planning to double the flock and purchase a second dairy cow to increase the home\'s self-sufficiency. A local seed company has offered to donate vegetable seeds for the next planting season ,  a wonderful act of community generosity.',
     img: 'https://images.unsplash.com/photo-1764001032216-360a43576788?w=800&h=500&fit=crop&auto=format',
   },
   {
@@ -45,7 +45,7 @@ const ARTICLES = [
     date: 'May 2025',
     title: 'Hannah Njoki Achieves Top Scores in Form 3 Exams',
     excerpt: 'Hannah, who arrived at Lemalah as a young girl with her siblings, has achieved top marks in her Form 3 examinations and is now setting her sights on university.',
-    body: 'When Hannah arrived at Lemalah, her diabetic grandmother could no longer provide for her or her siblings. She had experienced uncertainty and instability for much of her young life. Today, she is one of our brightest students — achieving top marks in her Form 3 national examinations and expressing interest in pursuing a career in medicine. Her success is a direct result of the stability, encouragement, and educational support that Lemalah provides. We are so proud of Hannah and committed to helping her achieve her university ambitions.',
+    body: 'When Hannah arrived at Lemalah, her diabetic grandmother could no longer provide for her or her siblings. She had experienced uncertainty and instability for much of her young life. Today, she is one of our brightest students ,  achieving top marks in her Form 3 national examinations and expressing interest in pursuing a career in medicine. Her success is a direct result of the stability, encouragement, and educational support that Lemalah provides. We are so proud of Hannah and committed to helping her achieve her university ambitions.',
     img: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&h=500&fit=crop&auto=format',
   },
   {
@@ -54,7 +54,7 @@ const ARTICLES = [
     date: 'April 2025',
     title: 'South African Supporter Marks 18 Years of Monthly Giving',
     excerpt: 'A loyal friend in South Africa has been sending approximately Kshs 40,000 (~$330) every month since 2007. This April marks 18 years of faithful, uninterrupted support.',
-    body: 'Some supporters stay. Since 2007, one remarkable individual in South Africa has sent approximately Kshs 40,000 (around $330 USD) every single month without interruption. Over 18 years, this amounts to nearly $72,000 in cumulative support — an extraordinary act of sustained generosity that has fed children, paid school fees, and kept the lights on in countless difficult months. We do not name donors without their permission, but we want to publicly honor this person\'s commitment. They have made an immeasurable difference. If you are reading this: thank you, from all 52 of our children.',
+    body: 'Some supporters stay. Since 2007, one remarkable individual in South Africa has sent approximately Kshs 40,000 (around $330 USD) every single month without interruption. Over 18 years, this amounts to nearly $72,000 in cumulative support ,  an extraordinary act of sustained generosity that has fed children, paid school fees, and kept the lights on in countless difficult months. We do not name donors without their permission, but we want to publicly honor this person\'s commitment. They have made an immeasurable difference. If you are reading this. Thank you, from all 52 of our children.',
     img: 'https://images.unsplash.com/photo-1601071733462-d0bbb6ee7a02?w=800&h=500&fit=crop&auto=format',
   },
 ]
@@ -87,15 +87,18 @@ export default function News() {
 
   return (
     <div>
-      <section className="relative min-h-[40vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="https://images.unsplash.com/photo-1664990594667-9bd4c60cbcfb?w=1600&h=600&fit=crop&auto=format" alt="News" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610]/90 via-[#1e1610]/50 to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-14 pt-24">
-          <span className="inline-block text-[#f0c94a] text-xs font-bold uppercase tracking-[0.2em] mb-4">News & Updates</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4" style={{ fontFamily: 'Fraunces, serif' }}>Stories from the Home</h1>
-          <p className="text-white/60 max-w-lg">Updates, success stories, urgent needs, and community moments from Lemalah Children's Home.</p>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full text-center">
+          <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
+            <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">News and Updates</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">Stories from the Home</h1>
+          <p className="text-white/70 text-xl font-light max-w-xl mx-auto">Updates, success stories, urgent needs, and community moments from Lemalah Children's Home.</p>
         </div>
       </section>
 

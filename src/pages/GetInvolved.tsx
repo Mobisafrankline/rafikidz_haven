@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
@@ -36,7 +36,7 @@ export default function GetInvolved() {
           <img src="https://images.unsplash.com/flagged/photo-1555251255-e9a095d6eb9d?w=1600&h=700&fit=crop&auto=format" alt="Community volunteers" className="w-full h-full object-cover scale-105" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
           <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a] animate-pulse" />
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Get Involved</span>
@@ -61,11 +61,11 @@ export default function GetInvolved() {
 function WaysToHelp() {
   const ways = [
     { title: 'Sponsor a Child', desc: "A monthly gift of $150 covers a child's complete needs: food, shelter, education, healthcare, and clothing.", cta: 'Sponsor Now', link: '/donate', hot: true },
-    { title: 'Make a Donation', desc: 'One-time or recurring gifts of any size. $15, $35, $75 — every amount has a direct, tangible impact.', cta: 'Donate', link: '/donate', hot: false },
+    { title: 'Make a Donation', desc: 'One-time or recurring gifts of any size. $15, $35, $75 ,  every amount has a direct, tangible impact.', cta: 'Donate', link: '/donate', hot: false },
     { title: 'Volunteer', desc: 'Come to Mai-Mahiu. Teach, build, counsel, cook, or simply spend time with the children. Skills and hearts welcome.', cta: 'Apply to Volunteer', link: '#volunteer', hot: false },
-    { title: 'Partner With Us', desc: 'Businesses, churches, schools, and NGOs — formal partnership agreements are available. Help us scale.', cta: 'Become a Partner', link: '#partner', hot: false },
+    { title: 'Partner With Us', desc: 'Businesses, churches, schools, and NGOs ,  formal partnership agreements are available. Help us scale.', cta: 'Become a Partner', link: '#partner', hot: false },
     { title: 'Fundraise for Us', desc: 'Run a birthday campaign, organize an event, or challenge your community. We provide all the tools you need.', cta: 'Start Fundraising', link: '#fundraise', hot: false },
-    { title: 'In-Kind Donations', desc: 'Bedding, clothing, school supplies, food, medical supplies — physical donations are always needed.', cta: 'See the List', link: '#in-kind', hot: false },
+    { title: 'In-Kind Donations', desc: 'Bedding, clothing, school supplies, food, medical supplies ,  physical donations are always needed.', cta: 'See the List', link: '#in-kind', hot: false },
   ]
   return (
     <section className="py-32 bg-[#fefce8]">
@@ -73,7 +73,7 @@ function WaysToHelp() {
         <div className="text-center mb-20">
           <span className="inline-block bg-[#eab308]/10 text-[#eab308] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">Ways to Help</span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1e1610] mb-5">Choose Your Path</h2>
-          <p className="text-[#6b5c4a] text-lg max-w-md mx-auto font-light">Whether you give time, money, or resources — there is a way for you to be part of this story.</p>
+          <p className="text-[#6b5c4a] text-lg max-w-md mx-auto font-light">Whether you give time, money, or resources ,  there is a way for you to be part of this story.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ways.map(w => (
@@ -149,7 +149,7 @@ function VolunteerSection() {
                 { label: 'Medical Professionals', desc: 'Health screenings, first aid training, wellness' },
                 { label: 'Creatives and Communicators', desc: 'Photography, storytelling, digital outreach' },
                 { label: 'Professionals and Mentors', desc: 'Career guidance, life skills, financial literacy' },
-                { label: 'Just Show Up', desc: 'Play, listen, encourage — presence is powerful' },
+                { label: 'Just Show Up', desc: 'Play, listen, encourage ,  presence is powerful' },
               ].map(v => (
                 <div key={v.label} className="flex gap-5 items-center bg-white rounded-2xl px-6 py-4 border border-[#eab308]/8 hover:border-[#eab308]/25 hover:shadow-sm transition-all group">
                   <div>
@@ -208,7 +208,7 @@ function FundraisingSection() {
             <span className="inline-block glass text-[#f0c94a] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Fundraise</span>
             <h2 className="text-4xl md:text-5xl font-extrabold mt-3 mb-8 leading-tight">Run a Campaign<br />for the Children</h2>
             <p className="text-white/70 leading-relaxed mb-10 text-lg font-light">
-              You have networks we don't. Birthday fundraisers, church collections, school drives, workplace giving — every campaign you run multiplies our reach.
+              You have networks we don't. Birthday fundraisers, church collections, school drives, workplace giving ,  every campaign you run multiplies our reach.
             </p>
             <div className="space-y-5">
               {[
@@ -264,7 +264,7 @@ function PartnershipSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { type: 'Corporate', desc: 'CSR partnerships, employee giving programs, and co-branded campaigns.' },
-            { type: 'Faith Organizations', desc: 'Churches, mosques, and faith groups — long-term giving relationships and volunteer missions.' },
+            { type: 'Faith Organizations', desc: 'Churches, mosques, and faith groups ,  long-term giving relationships and volunteer missions.' },
             { type: 'NGO Collaboration', desc: 'Joint programming, shared resources, and referral partnerships with other Kenya-based organizations.' },
             { type: 'Educational Institutions', desc: 'Schools and universities can partner for service learning, exchanges, and scholarship funding.' },
           ].map(p => (

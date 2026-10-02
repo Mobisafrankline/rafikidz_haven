@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+﻿import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
 export default function Programs() {
@@ -28,7 +28,7 @@ export default function Programs() {
           <img src="https://images.unsplash.com/photo-1632215861513-130b66fe97f4?w=1600&h=700&fit=crop&auto=format" alt="Teacher with children" className="w-full h-full object-cover scale-105" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 pt-32 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
           <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Programs & Services</span>
@@ -186,7 +186,7 @@ function CommunityProgram() {
       id="community"
       tag="Program 6 · Community"
       title="Integration, Recreation & Joy"
-      desc="Children at Lemalah are not isolated. They are part of a living community — local youth groups visit regularly, church congregations support them, and recreational activities nurture joy and belonging."
+      desc="Children at Lemalah are not isolated. They are part of a living community ,  local youth groups visit regularly, church congregations support them, and recreational activities nurture joy and belonging."
       details={[
         'Regular visits from local youth groups who volunteer and socialize',
         'Church-based support networks providing food, counsel, and community',
@@ -236,7 +236,7 @@ function CTA() {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 blur-[80px] rounded-full" />
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Your Gift Powers These Programs</h2>
-        <p className="text-white/80 mb-12 max-w-xl mx-auto text-xl font-light">Food, school, shelter, healthcare — none of it happens without funding. Every dollar directly supports a child in our care.</p>
+        <p className="text-white/80 mb-12 max-w-xl mx-auto text-xl font-light">Food, school, shelter, healthcare ,  none of it happens without funding. Every dollar directly supports a child in our care.</p>
         <div className="flex flex-wrap justify-center gap-5">
           <Link to="/donate" className="bg-white text-[#eab308] hover:bg-[#fefce8] px-10 py-4 rounded-full font-extrabold text-lg transition-all hover:scale-105 shadow-xl">Donate Now</Link>
           <Link to="/vision" className="glass hover:bg-white/20 text-white px-10 py-4 rounded-full font-bold text-lg transition-all">Our Vision →</Link>

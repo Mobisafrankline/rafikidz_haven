@@ -22,15 +22,18 @@ export default function Impact() {
   })
   return (
     <div>
-      <section className="relative min-h-[50vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="https://images.unsplash.com/photo-1554652532-bc503a3072cb?w=1600&h=700&fit=crop&auto=format" alt="Children playing" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610]/90 via-[#1e1610]/50 to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 pt-24">
-          <span className="inline-block text-[#f0c94a] text-xs font-bold uppercase tracking-[0.2em] mb-4">Our Impact</span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white max-w-2xl leading-tight mb-5" style={{ fontFamily: 'Fraunces, serif' }}>18 Years of Measurable Change</h1>
-          <p className="text-white/65 text-lg max-w-xl">From 4 children in a single pastor's home to a certified community organization changing futures.</p>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full text-center">
+          <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
+            <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Our Impact</span>
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">18 Years of Measurable Change</h1>
+          <p className="text-white/70 text-xl font-light max-w-xl mx-auto">From 4 children in a single pastor's home to a certified community organization changing futures.</p>
         </div>
       </section>
 
@@ -80,13 +83,13 @@ function OutcomeStories() {
   const outcomes = [
     {
       title: 'Street Boys to Graduates',
-      desc: 'Wilson Muga and James Gitonga — the first two children — arrived as street boys running from violence and abuse. They are now independent adults. Their sisters, who came after their mother was murdered, are also grown and living with dignity.',
+      desc: 'Wilson Muga and James Gitonga ,  the first two children ,  arrived as street boys running from violence and abuse. They are now independent adults. Their sisters, who came after their mother was murdered, are also grown and living with dignity.',
       metric: '4 siblings, 1 family, 18 years of transformation',
       img: 'https://images.unsplash.com/photo-1664990594674-418f27010fee?w=600&h=400&fit=crop&auto=format',
     },
     {
       title: 'Vocational Graduates Entering the Workforce',
-      desc: 'James Wamalwa and David Wasike — brothers from western Kenya whose pastor father abandoned them — both finished high school and are now completing vocational college. They are building careers and will soon support themselves entirely.',
+      desc: 'James Wamalwa and David Wasike ,  brothers from western Kenya. Their pastor father abandoned them ,  both finished high school and are now completing vocational college. They are building careers and will soon support themselves entirely.',
       metric: 'First generation in their family to earn professional qualifications',
       img: 'https://images.unsplash.com/photo-1571417800906-5a5058dbd45d?w=600&h=400&fit=crop&auto=format',
     },
@@ -136,8 +139,8 @@ function ContextSection() {
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p>Kenya has approximately 3.6 million orphaned or vulnerable children under 18. About 25% of the population lives below the poverty line, earning less than $3.20/day.</p>
               <p>A 2019 study by the CDC and UNICEF found that approximately 50% of all Kenyan children experience physical, emotional, or sexual violence. Tribal conflicts since 1992 have displaced thousands of families across the Rift Valley.</p>
-              <p>Children from these circumstances face a single focus: where will their next meal come from? Education, shelter, clothing — these are luxuries they cannot imagine. Many end up as street children, begging or stealing to survive.</p>
-              <p>Lemalah Children's Home is one response to this crisis. It is not enough — but it is real, it is local, and it is working.</p>
+              <p>Children from these circumstances face a single question: where will their next meal come from? Education, shelter, clothing ,  these are luxuries they cannot imagine. Many end up as street children, begging or stealing to survive.</p>
+              <p>Lemalah Children's Home is one response to this crisis. It is not enough ,  but it is real, it is local, and it is working.</p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">

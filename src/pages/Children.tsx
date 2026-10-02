@@ -1,10 +1,10 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Link } from 'react-router'
 import { useSEO } from '../hooks/useSEO'
 
 const ALL_CHILDREN = [
-  { name: 'Wilson Muga', status: 'Adult — Working', level: 'Alumni', story: 'One of the very first two children, rescued as a street boy from Githurai in 2006. His arrival sparked the entire movement that became Lemalah.', img: 'https://images.unsplash.com/photo-1547496613-4e19af6736dc?w=400&h=300&fit=crop&auto=format' },
-  { name: 'James Gitonga', status: 'Adult — Working', level: 'Alumni', story: 'Wilson\'s brother and the second of the founding children. Together they started everything. Now adults living independently.', img: 'https://images.unsplash.com/photo-1664990594674-418f27010fee?w=400&h=300&fit=crop&auto=format' },
+  { name: 'Wilson Muga', status: 'Adult ,  Working', level: 'Alumni', story: 'One of the very first two children, rescued as a street boy from Githurai in 2006. His arrival sparked the entire movement that became Lemalah.', img: 'https://images.unsplash.com/photo-1547496613-4e19af6736dc?w=400&h=300&fit=crop&auto=format' },
+  { name: 'James Gitonga', status: 'Adult ,  Working', level: 'Alumni', story: 'Wilson\'s brother and the second of the founding children. Together they started everything. Now adults living independently.', img: 'https://images.unsplash.com/photo-1664990594674-418f27010fee?w=400&h=300&fit=crop&auto=format' },
   { name: 'Hannah Njoki', status: 'Form 3, High School', level: 'Secondary', story: 'Came with her siblings when their ailing diabetic grandmother from Kipipiri could no longer care for them. Bright, ambitious, and aspiring to university.', img: 'https://images.unsplash.com/photo-1772683681368-54cf36bb889f?w=400&h=300&fit=crop&auto=format' },
   { name: 'John Cena Mburu', status: 'Form 2, High School', level: 'Secondary', story: 'Younger brother of Hannah. His grandmother\'s condition improved markedly after Lemalah lifted the burden of care.', img: 'https://images.unsplash.com/photo-1760808574067-27ce83df8ed6?w=400&h=300&fit=crop&auto=format' },
   { name: 'Jackie Wairimu', status: 'Primary School', level: 'Primary', story: 'One of four siblings brought by their grandmother from Nyandarua. She has blossomed in the safe and loving environment at Lemalah.', img: 'https://images.unsplash.com/photo-1770842655322-bcfd1c4be229?w=400&h=300&fit=crop&auto=format' },
@@ -13,7 +13,7 @@ const ALL_CHILDREN = [
   { name: 'David Wasike', status: 'Vocational College', level: 'Tertiary', story: 'James Wamalwa\'s brother. Both arrived together and both completed high school. Now in vocational training side by side.', img: 'https://images.unsplash.com/photo-1571417800906-5a5058dbd45d?w=400&h=300&fit=crop&auto=format' },
   { name: 'James Mucheke', status: 'Secondary School', level: 'Secondary', story: 'Brought in by his grandmother after another grandmother heard about Lemalah and personally came to request help for him.', img: 'https://images.unsplash.com/photo-1664990594667-9bd4c60cbcfb?w=400&h=300&fit=crop&auto=format' },
   { name: 'Elijah Gitau', status: 'Secondary School', level: 'Secondary', story: 'James Mucheke\'s brother. Both arrived after their grandmother made the journey to Mai-Mahiu to plead their case.', img: 'https://images.unsplash.com/photo-1547496614-d145e2fa88ed?w=400&h=300&fit=crop&auto=format' },
-  { name: '42 More Children', status: 'Various Levels', level: 'Various', story: 'From toddlers to teenagers — children orphaned, abandoned, abused, or left by single parents who passed away. Each with a name, a story, and now a home.', img: 'https://images.unsplash.com/photo-1637148734636-906c24feeb55?w=400&h=300&fit=crop&auto=format' },
+  { name: '42 More Children', status: 'Various Levels', level: 'Various', story: 'From toddlers to teenagers ,  children orphaned, abandoned, abused, or left by single parents who passed away. Each with a name, a story, and now a home.', img: 'https://images.unsplash.com/photo-1637148734636-906c24feeb55?w=400&h=300&fit=crop&auto=format' },
   { name: 'The Waiting List', status: 'Awaiting Placement', level: 'Waiting', story: 'Siblings of current children, village children in crisis, referred cases from across Kenya. They need us. Our resources must grow to reach them.', img: 'https://images.unsplash.com/photo-1632932693914-89b90ae3d16d?w=400&h=300&fit=crop&auto=format' },
 ]
 
@@ -32,7 +32,7 @@ export default function Children() {
   useSEO({
     title: 'Our Children – Stories of Hope & Resilience',
     description:
-      'Meet the 50+ orphaned and vulnerable children at Lemalah Children\'s Home in Kenya — from the founding four in 2006 to today\'s primary, secondary, and vocational students.',
+      'Meet the 50+ orphaned and vulnerable children at Lemalah Children\'s Home in Kenya ,  from the founding four in 2006 to today\'s primary, secondary, and vocational students.',
     path: '/children',
     keywords:
       'children Lemalah Kenya, orphaned children Kenya, sponsored children Kenya, Kenya orphanage kids, Rafikidz Haven children stories',
@@ -53,15 +53,20 @@ export default function Children() {
 
   return (
     <div>
-      <section className="relative min-h-[50vh] flex items-end overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1637148734636-906c24feeb55?w=1600&h=700&fit=crop&auto=format" alt="Children at Lemalah" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610]/90 via-[#1e1610]/50 to-transparent" />
+          <img src="https://images.unsplash.com/photo-1637148734636-906c24feeb55?w=1600&h=700&fit=crop&auto=format" alt="Children at Lemalah" className="w-full h-full object-cover scale-105" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 pt-24">
-          <span className="inline-block text-[#f0c94a] text-xs font-bold uppercase tracking-[0.2em] mb-4">Our Children</span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white max-w-2xl leading-tight mb-5" style={{ fontFamily: 'Fraunces, serif' }}>52 Children. 52 Stories.</h1>
-          <p className="text-white/65 text-lg max-w-xl leading-relaxed">Each child arrived carrying a different burden. Each is now building a different future.</p>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full text-center">
+          <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
+            <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Our Children</span>
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+            52 Children. <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">52 Stories.</span>
+          </h1>
+          <p className="text-white/70 text-xl font-light max-w-xl mx-auto">Each child arrived carrying a different burden. Each is now building a different future.</p>
         </div>
       </section>
 
