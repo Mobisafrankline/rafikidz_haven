@@ -49,12 +49,13 @@ export default function About() {
 
 function PageHero({ tag, title, sub, img }: { tag: string; title: string; sub: string; img: string }) {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img src={img} alt={title} className="w-full h-full object-cover scale-105" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F3840]/95 via-[#0F3840]/60 to-[#0F3840]/70" />
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
+          <div className="max-w-3xl">
         <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
           <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">{tag}</span>
@@ -63,7 +64,8 @@ function PageHero({ tag, title, sub, img }: { tag: string; title: string; sub: s
           {title}
         </h1>
         <p className="text-white/70 text-xl max-w-xl leading-relaxed font-light">{sub}</p>
-      </div>
+        </div>
+        </div>
     </section>
   )
 }

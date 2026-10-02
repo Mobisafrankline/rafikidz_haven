@@ -53,12 +53,13 @@ export default function Children() {
 
   return (
     <div>
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="https://images.unsplash.com/photo-1637148734636-906c24feeb55?w=1600&h=700&fit=crop&auto=format" alt="Children at Lemalah" className="w-full h-full object-cover scale-105" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F3840]/95 via-[#0F3840]/60 to-[#0F3840]/70" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
+          <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Our Children</span>
@@ -66,7 +67,8 @@ export default function Children() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
             52 Children. <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f0c94a] to-[#eab308]">52 Stories.</span>
           </h1>
-          <p className="text-white/70 text-xl font-light max-w-xl mx-auto">Each child arrived carrying a different burden. Each is now building a different future.</p>
+          <p className="text-white/70 text-xl font-light max-w-xl">Each child arrived carrying a different burden. Each is now building a different future.</p>
+          </div>
         </div>
       </section>
 

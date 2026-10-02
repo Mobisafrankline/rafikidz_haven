@@ -33,16 +33,17 @@ export default function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1601071733462-d0bbb6ee7a02?w=1600&h=600&fit=crop&auto=format"
             alt="Contact"
             className="w-full h-full object-cover scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1e1610] via-[#1e1610]/60 to-[#1e1610]/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F3840]/95 via-[#0F3840]/60 to-[#0F3840]/70" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-28 w-full text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
+          <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 glass-dark px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#f0c94a]" />
             <span className="text-[#f0c94a] text-xs font-bold uppercase tracking-widest">Contact Us</span>
@@ -53,6 +54,7 @@ export default function Contact() {
           <p className="text-white/70 text-xl font-light max-w-xl">
             Whether you want to donate, volunteer, partner, or simply learn more ,  we would love to hear from you.
           </p>
+          </div>
         </div>
       </section>
 
